@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운전면허 사진 가이드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-area">
+                    <a href="/">
+                        <img src="/images/logo_main.gif" alt="운전면허 사진 가이드 로고" class="logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <aside class="ad-area left">
+            <!-- 왼쪽 광고 영역 -->
+            여기는 광고 영역 (좌)
+        </aside>
+
+        <main class="app-main">
+            <article class="content-wrapper">
+                <section class="camera-area">
+                    <h2>사진 촬영 영역</h2>
+                    <div class="camera-container">
+                        <video id="camera-preview" autoplay playsinline></video>
+                        <div class="guide-line"></div>
+                        <div id="crop-overlay" style="display: none;">
+                            <div id="crop-box">
+                                <div class="crop-handle top-left"></div>
+                                <div class="crop-handle top-right"></div>
+                                <div class="crop-handle bottom-left"></div>
+                                <div class="crop-handle bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="capture-button">사진 촬영</button>
+                        <button id="reset-button">다시 찍기</button>
+                        <button id="crop-button">자르기</button>
+                    </div>
+
+                    <aside class="thumbnail-list-area">
+                        <h2>촬영된 사진 목록</h2>
+                        <ul id="thumbnail-list">
+                            {{ 썸네일 이미지가 여기에 목록으로 추가됩니다. }}
+                        </ul>
+                    </aside>
+                </section>
+
+                <aside class="guide-area">
+                    <section id="photo-specifications">
+                        <h2>사진 규격 안내</h2>
+                        <p>운전면허 사진은 다음 규격을 준수해야 합니다.</p>
+                        <ul>
+                            <li><strong>크기:</strong> 3.5cm x 4.5cm</li>
+                            <li><strong>해상도:</strong> 온라인 제출 시 가로 350픽셀, 세로 450픽셀</li>
+                            <li><strong>파일 형식:</strong> JPG (JPEG), 파일 크기 250KB 이하</li>
+                            <li><strong>촬영 시기:</strong> 최근 6개월 이내 촬영한 컬러 사진</li>
+                        </ul>
+                    </section>
+
+                    <section id="background-specifications">
+                        <h3>배경</h3>
+                        <ul>
+                            <li><strong>색상:</strong> 흰색 또는 연한 회색 배경</li>
+                            <li><strong>특징:</strong> 그림자나 패턴 없이 균일한 배경</li>
+                        </ul>
+                    </section>
+
+                    <section id="face-pose-specifications">
+                        <h3>얼굴 및 자세</h3>
+                        <ul>
+                            <li><strong>자세:</strong> 정면 응시, 얼굴 중앙 위치</li>
+                            <li><strong>표정:</strong> 자연스러운 표정, 입을 다문 상태</li>
+                            <li><strong>눈:</strong> 선명하게 보여야 함, 안경 착용 시 렌즈 반사 주의</li>
+                        </ul>
+                    </section>
+
+                    <section id="dress-accessories-specifications">
+                        <h3>의상 및 액세서리</h3>
+                        <ul>
+                            <li><strong>의상:</strong> 배경과 대비되는 색상, 밝은색 옷 피하기</li>
+                            <li><strong>액세서리:</strong> 모자, 귀걸이, 목걸이 등 얼굴 가리는 장신구 착용 금지</li>
+                            <li><strong>안경:</strong> 착용 가능, 렌즈 반사 및 눈 가림 주의</li>
+                        </ul>
+                    </section>
+
+                    <section id="quality-specifications">
+                        <h3>사진 품질 및 추가 주의사항</h3>
+                        <ul>
+                            <li><strong>인화지:</strong> 사진 인화 용지에 출력된 고해상도 사진 권장</li>
+                            <li><strong>수정 금지:</strong> 포토샵 등 수정된 사진 사용 불가</li>
+                            <li><strong>얼굴 비율:</strong> 사진 전체의 70~80%를 얼굴이 차지하도록 촬영</li>
+                            <li><strong>배경 일관성:</strong> 배경에 다른 사물이나 사람 포함 금지</li>
+                        </ul>
+                    </section>
+                </aside>
+
+                <div id="original-photo-container" style="display: none;">
+                    <img id="original-photo" src="#" alt="원본 사진">
+                </div>
+            </article>
+        </main>
+
+        <aside class="ad-area right">
+            <!-- 오른쪽 광고 영역 -->
+            여기는 광고 영역 (우)
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
