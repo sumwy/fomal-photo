@@ -43,6 +43,7 @@
                         <button id="capture-button">사진 촬영</button>
                         <button id="reset-button">다시 찍기</button>
                         <button id="crop-button">자르기</button>
+                        <button id="download-button">다운로드</button>
                     </div>
 
                     <aside class="thumbnail-list-area">
@@ -113,6 +114,23 @@
             여기는 광고 영역 (우)
         </aside>
     </div>
+
+    <!-- 로딩 인디케이터 -->
+    <div id="loading-overlay" style="display:none;">
+        <div class="loading-spinner"></div>
+        <p>이미지 보정 중...</p>
+    </div>
+
+    <!-- 보정 옵션 UI -->
+    <div class="ai-options">
+        <label>
+            <input type="checkbox" id="skin-smoothing" checked> 피부 보정
+        </label>
+        <label>
+            <input type="checkbox" id="eye-enhance" checked> 눈매 보정
+        </label>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html> 

@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalThumbnailContainer = document.querySelector('.thumbnail-container');
     const resizedOriginalCanvas = document.createElement('canvas');
     const resizedOriginalContext = resizedOriginalCanvas.getContext('2d');
+    const downloadButton = document.getElementById('download-button');
 
     let stream = null;
     let originalImageDataURL = null;
@@ -68,84 +69,69 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 사진 촬영 함수 수정
-    function capturePhoto() {
+    // 사진 촬영 함수 수정 (백엔드 API 호출)
+    async function capturePhoto() {
         if (!cameraReady) {
             alert('카메라 준비 중입니다. 잠시만 기다려주세요.');
             return;
         }
 
-        // 캔버스 크기 및 반전 설정 (캡처용)
-        captureCanvasContext.canvas.width = cameraPreview.videoWidth;
-        captureCanvasContext.canvas.height = cameraPreview.videoHeight;
-        captureCanvasContext.scale(-1, 1);
-        captureCanvasContext.translate(-captureCanvasContext.canvas.width, 0);
-        captureCanvasContext.drawImage(cameraPreview, 0, 0, captureCanvasContext.canvas.width, captureCanvasContext.canvas.height);
-        captureCanvasContext.restore(); // save/restore 로 캔버스 상태 관리
+        try {
+            showLoading();
+            // 캔버스에서 이미지 데이터 URL 얻기 (JPEG 형식)
+            originalImageDataURL = originalCanvasContext.canvas.toDataURL('image/jpeg');
 
+            // 고해상도 이미지 캡처
+            const fullResCanvas = document.createElement('canvas');
+            fullResCanvas.width = cameraPreview.videoWidth;
+            fullResCanvas.height = cameraPreview.videoHeight;
+            const ctx = fullResCanvas.getContext('2d');
+            ctx.drawImage(cameraPreview, 0, 0);
+            originalImageDataURL = fullResCanvas.toDataURL('image/jpeg', 0.9);
 
-        // 원본 사진 캔버스에 리사이징 및 그리기 (350x450)
-        const originalImageWidth = 350;
-        const originalImageHeight = 450;
-        originalCanvasContext.canvas.width = originalImageWidth;
-        originalCanvasContext.canvas.height = originalImageHeight;
+            // API 요청에 보정 옵션 추가
+            const response = await fetch('/api/enhance_image', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    image_data: originalImageDataURL,
+                    options: {
+                        skin_smoothing: document.getElementById('skin-smoothing').checked,
+                        eye_enhance: document.getElementById('eye-enhance').checked
+                    }
+                })
+            });
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            const enhanced_image_data_url = data.enhanced_image_data_url; // 백엔드로부터 보정된 이미지 Data URL 받기
+            originalPhoto.src = enhanced_image_data_url; // 보정된 이미지로 업데이트
+            originalPhotoContainer.style.display = 'flex';
 
-        // 캔버스 context resetTransform() 추가 (save/restore 대신)
-        originalCanvasContext.resetTransform();
-        originalCanvasContext.scale(-1, 1);
-        originalCanvasContext.translate(-originalCanvasContext.canvas.width, 0);
+            // 썸네일 업데이트 (보정된 이미지 기반으로 썸네일 생성)
+            createThumbnailFromDataUrl(enhanced_image_data_url);
 
-
-        // 이미지 비율 유지하면서 캔버스에 맞게 리사이징
-        const videoRatio = cameraPreview.videoWidth / cameraPreview.videoHeight;
-        const canvasRatio = originalImageWidth / originalImageHeight;
-        let drawWidth = originalImageWidth;
-        let drawHeight = originalImageHeight;
-        let drawX = 0;
-        let drawY = 0;
-
-        if (videoRatio > canvasRatio) {
-            // 비디오 가로가 더 넓은 경우, 캔버스 높이에 맞춰서 자르기
-            drawHeight = originalImageHeight;
-            drawWidth = originalImageHeight * videoRatio;
-            drawX = (originalImageWidth - drawWidth) / 2;
-        } else {
-            // 비디오 세로가 더 긴 경우, 캔버스 너비에 맞춰서 자르기
-            drawWidth = originalImageWidth;
-            drawHeight = originalImageWidth / videoRatio;
-            drawY = (originalImageHeight - drawHeight) / 2;
+        } catch (error) {
+            console.error('Error:', error);
+            alert('이미지 보정 중 오류가 발생했습니다.');
+        } finally {
+            hideLoading();
         }
+    }
 
-
-        originalCanvasContext.drawImage(
-            cameraPreview,
-            0, 0, cameraPreview.videoWidth, cameraPreview.videoHeight, // source image 영역
-            drawX, drawY, drawWidth, drawHeight // destination canvas 영역
-        );
-
-
-        originalImageDataURL = originalCanvasContext.canvas.toDataURL('image/jpeg');
-
-        if (!originalImageDataURL) {
-            return;
+    // Data URL 로 썸네일 생성 및 목록 업데이트 함수
+    function createThumbnailFromDataUrl(dataUrl) {
+        const img = new Image();
+        img.src = dataUrl;
+        img.onload = () => {
+            captureCanvasContext.canvas.width = 84;
+            captureCanvasContext.canvas.height = 105;
+            captureCanvasContext.resetTransform();
+            captureCanvasContext.drawImage(img, 0, 0, img.width, img.height, 0, 0, captureCanvasContext.canvas.width, captureCanvasContext.canvas.height);
+            const thumbnailDataURL = captureCanvasContext.canvas.toDataURL('image/jpeg');
+            updateThumbnails(thumbnailDataURL);
         }
-
-        const thumbnailWidth = 84;  // 3.5cm -> 픽셀 (96DPI 기준)
-        const thumbnailHeight = 105; // 4.5cm -> 픽셀 (96DPI 기준)
-
-        captureCanvasContext.canvas.width = thumbnailWidth;
-        captureCanvasContext.canvas.height = thumbnailHeight;
-        captureCanvasContext.resetTransform(); // 썸네일 캔버스 변환 초기화
-        captureCanvasContext.drawImage(
-            originalCanvasContext.canvas, // Resized original canvas 사용
-            0, 0, originalCanvasContext.canvas.width, originalCanvasContext.canvas.height,
-            0, 0, thumbnailWidth, thumbnailHeight
-        );
-
-
-        const thumbnailDataURL = captureCanvasContext.canvas.toDataURL('image/jpeg');
-
-        addThumbnailToList(thumbnailDataURL, originalImageDataURL); // originalImageDataURL 전달
     }
 
     // 썸네일 목록에 썸네일 추가 함수 (originalImageDataURL 파라미터 추가)
@@ -366,4 +352,35 @@ document.addEventListener('DOMContentLoaded', () => {
     originalPhoto.addEventListener('error', () => {
         originalPhotoContainer.style.display = 'none';
     });
+
+    // 다운로드 기능 개선 (파일 형식 선택 추가)
+    downloadButton.addEventListener('click', () => {
+        if (!enhanced_image_data_url) {
+            alert('보정된 이미지가 없습니다.');
+            return;
+        }
+
+        // 파일 형식 선택 다이얼로그
+        const format = prompt('다운로드 형식을 선택하세요 (jpg/png):', 'jpg').toLowerCase();
+        if (!['jpg', 'png'].includes(format)) {
+            alert('지원하지 않는 파일 형식입니다.');
+            return;
+        }
+
+        const link = document.createElement('a');
+        link.href = enhanced_image_data_url.replace('jpeg', format); // MIME 타입 수정
+        link.download = `증명사진.${format}`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
+    // AI 보정 진행 상태 표시
+    function showLoading() {
+        document.getElementById('loading-overlay').style.display = 'flex';
+    }
+
+    function hideLoading() {
+        document.getElementById('loading-overlay').style.display = 'none';
+    }
 });
