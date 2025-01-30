@@ -1,0 +1,6 @@
+frontend/
+├── templates/
+│   └── index.html  # 메인 템플릿 파일
+└── static/
+    └── js/
+        └── script.js  # 실제 자바스크립트 코드 
