@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>운전면허 사진 가이드</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <div class="app-container">
         <header class="app-header">
             <div class="header-content">
-                <div class="logo-area">
-                    <a href="/">
-                        <img src="/images/logo_main.gif" alt="운전면허 사진 가이드 로고" class="logo">
-                    </a>
-                </div>
+                <img src="/static/images/logo_main.gif" alt="로고" class="logo">
+                <h1>증명사진 AI 보정</h1>
             </div>
         </header>
 
@@ -27,6 +24,7 @@
             <article class="content-wrapper">
                 <section class="camera-area">
                     <h2>사진 촬영 영역</h2>
+                    
                     <div class="camera-container">
                         <video id="camera-preview" autoplay playsinline></video>
                         <div class="guide-line"></div>
@@ -42,16 +40,22 @@
                     <div class="button-container">
                         <button id="capture-button">사진 촬영</button>
                         <button id="reset-button">다시 찍기</button>
-                        <button id="crop-button">자르기</button>
-                        <button id="download-button">다운로드</button>
                     </div>
 
                     <aside class="thumbnail-list-area">
                         <h2>촬영된 사진 목록</h2>
                         <ul id="thumbnail-list">
-                            {{ 썸네일 이미지가 여기에 목록으로 추가됩니다. }}
+                            {# 썸네일 이미지가 여기에 목록으로 추가됩니다. #}
                         </ul>
                     </aside>
+
+                    <div id="original-photo-container" style="display: none;">
+                        <img id="original-photo" src="#" alt="원본 사진">
+                        <div id="popup-buttons" class="popup-buttons">
+                            <button id="popup-close" class="popup-button">닫기</button>
+                            <button id="popup-download" class="popup-button">다운로드</button>
+                        </div>
+                    </div>
                 </section>
 
                 <aside class="guide-area">
@@ -102,10 +106,6 @@
                         </ul>
                     </section>
                 </aside>
-
-                <div id="original-photo-container" style="display: none;">
-                    <img id="original-photo" src="#" alt="원본 사진">
-                </div>
             </article>
         </main>
 
@@ -121,16 +121,6 @@
         <p>이미지 보정 중...</p>
     </div>
 
-    <!-- 보정 옵션 UI -->
-    <div class="ai-options">
-        <label>
-            <input type="checkbox" id="skin-smoothing" checked> 피부 보정
-        </label>
-        <label>
-            <input type="checkbox" id="eye-enhance" checked> 눈매 보정
-        </label>
-    </div>
-
-    <script src="static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>
 </body>
 </html> 

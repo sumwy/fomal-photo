@@ -19,25 +19,24 @@ if (!CanvasRenderingContext2D.prototype.roundRect) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const cameraPreview = document.getElementById('camera-preview');
+document.addEventListener('DOMContentLoaded', async () => {
+    const video = document.getElementById('camera-preview');
     const captureButton = document.getElementById('capture-button');
-    const capturedThumbnail = document.getElementById('captured-thumbnail');
-    const originalPhoto = document.getElementById('original-photo');
-    const originalPhotoContainer = document.getElementById('original-photo-container');
     const resetButton = document.getElementById('reset-button');
-    const captureCanvasContext = document.createElement('canvas').getContext('2d');
-    const originalCanvasContext = document.createElement('canvas').getContext('2d');
+    const downloadButton = document.getElementById('download-button');
+    const originalPhotoContainer = document.getElementById('original-photo-container');
+    const originalPhoto = document.getElementById('original-photo');
+    const capturedThumbnail = document.getElementById('captured-thumbnail');
     const thumbnailList = document.getElementById('thumbnail-list');
     const originalThumbnailContainer = document.querySelector('.thumbnail-container');
     const resizedOriginalCanvas = document.createElement('canvas');
     const resizedOriginalContext = resizedOriginalCanvas.getContext('2d');
-    const downloadButton = document.getElementById('download-button');
 
     let stream = null;
     let originalImageDataURL = null;
     let thumbnailArray = [];
     let cameraReady = false;
+    let capturedPhotos = []; // 사진 목록을 저장할 배열
 
     // 자르기 기능 관련 변수
     const cropButton = document.getElementById('crop-button');
@@ -50,116 +49,174 @@ document.addEventListener('DOMContentLoaded', () => {
     let cropStartX, cropStartY; // 드래그 시작 좌표
     let cropBoxStartX, cropBoxStartY, cropBoxStartWidth, cropBoxStartHeight; // 리사이즈/드래그 시작 시 자르기 박스 정보
 
-    // 카메라 시작 함수
-    async function startCamera() {
+    // 웹캠 접근
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         try {
-            if (stream) {
-                return;
-            }
-            stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-            cameraPreview.srcObject = stream;
-            cameraPreview.style.transform = 'scaleX(-1)';
-
-            cameraPreview.addEventListener('loadedmetadata', () => {
-                cameraReady = true;
-            });
-
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            video.play();
         } catch (error) {
-            alert('카메라 접근에 실패했습니다. 카메라 권한을 확인해주세요.');
+            alert('카메라 접근 실패: ' + error);
         }
+    } else {
+        alert('웹캠을 지원하지 않습니다.');
     }
 
-    // 사진 촬영 함수 수정 (백엔드 API 호출)
-    async function capturePhoto() {
-        if (!cameraReady) {
-            alert('카메라 준비 중입니다. 잠시만 기다려주세요.');
-            return;
+    // 사진 촬영 및 보정 요청
+    captureButton.addEventListener('click', async () => {
+        // 로딩 오버레이 표시
+        const loadingOverlay = document.getElementById('loading-overlay');
+        loadingOverlay.style.display = 'flex';
+
+        // 운전면허증 사진 규격: 3.5cm x 4.5cm (350x450 픽셀)
+        const canvas = document.createElement('canvas');
+        canvas.width = 350;  // 운전면허증 가로 픽셀
+        canvas.height = 450; // 운전면허증 세로 픽셀
+        const context = canvas.getContext('2d');
+        
+        // 얼굴이 중앙에 오도록 비디오 프레임 계산
+        const videoAspect = video.videoWidth / video.videoHeight;
+        const canvasAspect = canvas.width / canvas.height;
+        
+        let drawWidth = video.videoWidth;
+        let drawHeight = video.videoHeight;
+        let startX = 0;
+        let startY = 0;
+
+        // 얼굴이 사진의 70-80%를 차지하도록 조정
+        const scaleFactor = 0.75; // 얼굴 비율 75%로 설정
+        
+        if (videoAspect > canvasAspect) {
+            drawWidth = video.videoHeight * canvasAspect;
+            startX = (video.videoWidth - drawWidth) / 2;
+        } else {
+            drawHeight = video.videoWidth / canvasAspect;
+            startY = (video.videoHeight - drawHeight) / 2;
         }
 
+        // 캔버스에 비디오 프레임 그리기
+        context.fillStyle = '#FFFFFF'; // 배경색 흰색
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(
+            video,
+            startX, startY, drawWidth, drawHeight,
+            0, 0, canvas.width, canvas.height
+        );
+
+        const imageDataURL = canvas.toDataURL('image/jpeg', 0.95); // 고품질 JPEG
+
+        const options = {
+            upscale: true,
+            scale_factor: 1.5,
+            skin_smoothing: true,
+            eye_enhance: true,
+            remove_background: true,
+            sharpness_enhance: true
+        };
+        
         try {
-            showLoading();
-            // 캔버스에서 이미지 데이터 URL 얻기 (JPEG 형식)
-            originalImageDataURL = originalCanvasContext.canvas.toDataURL('image/jpeg');
-
-            // 고해상도 이미지 캡처
-            const fullResCanvas = document.createElement('canvas');
-            fullResCanvas.width = cameraPreview.videoWidth;
-            fullResCanvas.height = cameraPreview.videoHeight;
-            const ctx = fullResCanvas.getContext('2d');
-            ctx.drawImage(cameraPreview, 0, 0);
-            originalImageDataURL = fullResCanvas.toDataURL('image/jpeg', 0.9);
-
-            // API 요청에 보정 옵션 추가
             const response = await fetch('/api/enhance_image', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    image_data: originalImageDataURL,
-                    options: {
-                        skin_smoothing: document.getElementById('skin-smoothing').checked,
-                        eye_enhance: document.getElementById('eye-enhance').checked
-                    }
+                    image_data: imageDataURL,
+                    options: options
                 })
             });
+
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error('네트워크 오류: ' + response.status);
             }
-            const data = await response.json();
-            const enhanced_image_data_url = data.enhanced_image_data_url; // 백엔드로부터 보정된 이미지 Data URL 받기
-            originalPhoto.src = enhanced_image_data_url; // 보정된 이미지로 업데이트
-            originalPhotoContainer.style.display = 'flex';
 
-            // 썸네일 업데이트 (보정된 이미지 기반으로 썸네일 생성)
-            createThumbnailFromDataUrl(enhanced_image_data_url);
+            const result = await response.json();
+            if (result.error) {
+                alert("이미지 보정 에러: " + result.error);
+            } else if (result.enhanced_image) {
+                originalPhoto.src = result.enhanced_image;
+                originalPhoto.style.transform = 'scaleX(-1)';
+                originalPhotoContainer.style.display = 'block';
+                addThumbnailToList(result.enhanced_image, imageDataURL);
 
+                // 팝업 닫기 버튼 이벤트 (이벤트 리스너를 여기에 배치)
+                const popupCloseButton = document.getElementById('popup-close');
+                if (popupCloseButton) {
+                    popupCloseButton.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        originalPhotoContainer.style.display = 'none';
+                    });
+                }
+
+                // 팝업 다운로드 버튼 이벤트 (이벤트 리스너를 여기에 배치)
+                const popupDownloadButton = document.getElementById('popup-download');
+                if (popupDownloadButton) {
+                    popupDownloadButton.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (originalPhoto.src && originalPhoto.src !== '#') {
+                            const date = new Date();
+                            const fileName = `증명사진_${date.getFullYear()}${(date.getMonth()+1).toString().padStart(2,'0')}${date.getDate().toString().padStart(2,'0')}.jpg`;
+
+                            // 이미지 다운로드
+                            fetch(originalPhoto.src)
+                                .then(response => response.blob())
+                                .then(blob => {
+                                    const url = window.URL.createObjectURL(blob);
+                                    const link = document.createElement('a');
+                                    link.href = url;
+                                    link.download = fileName;
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                    window.URL.revokeObjectURL(url);
+                                })
+                                .catch(err => {
+                                    console.error('다운로드 중 오류 발생:', err);
+                                    alert('이미지 다운로드 중 오류가 발생했습니다.');
+                                });
+                        }
+                    });
+                }
+            }
         } catch (error) {
             console.error('Error:', error);
-            alert('이미지 보정 중 오류가 발생했습니다.');
+            alert("이미지 보정 중 오류 발생: " + error.message);
         } finally {
-            hideLoading();
+            // 로딩 오버레이 숨김
+            loadingOverlay.style.display = 'none';
         }
-    }
+    });
 
-    // Data URL 로 썸네일 생성 및 목록 업데이트 함수
-    function createThumbnailFromDataUrl(dataUrl) {
-        const img = new Image();
-        img.src = dataUrl;
-        img.onload = () => {
-            captureCanvasContext.canvas.width = 84;
-            captureCanvasContext.canvas.height = 105;
-            captureCanvasContext.resetTransform();
-            captureCanvasContext.drawImage(img, 0, 0, img.width, img.height, 0, 0, captureCanvasContext.canvas.width, captureCanvasContext.canvas.height);
-            const thumbnailDataURL = captureCanvasContext.canvas.toDataURL('image/jpeg');
-            updateThumbnails(thumbnailDataURL);
-        }
-    }
-
-    // 썸네일 목록에 썸네일 추가 함수 (originalImageDataURL 파라미터 추가)
-    function addThumbnailToList(thumbnailDataURL, originalImageDataURL) {
-        thumbnailArray.push(thumbnailDataURL);
-
-        const thumbnailItem = document.createElement('li');
-        const thumbnailImage = document.createElement('img');
-        thumbnailImage.src = thumbnailDataURL;
-        thumbnailImage.alt = '촬영된 썸네일';
-
-        thumbnailImage.addEventListener('click', () => {
-            originalPhoto.src = originalImageDataURL; // 썸네일 클릭 시 원본 사진 Data URL 사용
-            originalPhotoContainer.style.display = 'flex';
-        });
-
-        thumbnailItem.appendChild(thumbnailImage);
-        thumbnailList.prepend(thumbnailItem);
-
-        if (thumbnailList.children.length > 5) {
-            thumbnailList.removeChild(thumbnailList.lastElementChild);
-            thumbnailArray.shift();
-        }
-    }
-
-    // 원본 사진 컨테이너 클릭 시 닫기 이벤트 리스너
-    originalPhotoContainer.addEventListener('click', () => {
+    // 리셋 버튼: 보정 이미지 숨김 및 촬영된 사진 목록 초기화
+    resetButton.addEventListener('click', () => {
+        // 보정된 이미지 팝업 숨김 및 이미지 초기화
         originalPhotoContainer.style.display = 'none';
+        originalPhoto.src = '';
+        originalPhoto.style.transform = '';
+        
+        // 자르기 오버레이가 있다면 숨김
+        if (cropOverlay) {
+            cropOverlay.style.display = 'none';
+        }
+        
+        // 촬영된 사진 목록 초기화
+        thumbnailList.innerHTML = '';
+        thumbnailArray = [];
+        capturedPhotos = [];
+    });
+
+    // 다운로드 버튼: 이미지 파일 저장
+    downloadButton.addEventListener('click', () => {
+        if (originalPhoto.src && originalPhoto.src !== '#') {
+            const link = document.createElement('a');
+            link.href = originalPhoto.src;
+            link.download = 'enhanced_photo.jpg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            alert('다운로드할 이미지가 없습니다.');
+        }
     });
 
     // 자르기 버튼 클릭 이벤트 핸들러
@@ -169,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleCropMode() {
         isCropping = !isCropping;
         cropOverlay.style.display = isCropping ? 'block' : 'none';
-        cameraArea.classList.toggle('cropping', isCropping); // cameraArea 클래스 토글
+        video.classList.toggle('cropping', isCropping); // video 클래스 토글
 
         if (isCropping) {
             // 자르기 모드 활성화 시, 이벤트 리스너 추가
@@ -218,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let newY = cropBoxStartY + offsetY;
 
         // crop box 가 camera-container 영역을 벗어나지 않도록 제한
-        const containerRect = cameraPreview.parentElement.getBoundingClientRect(); // camera-container
+        const containerRect = video.parentElement.getBoundingClientRect(); // camera-container
         const boxRect = cropBox.getBoundingClientRect();
         const maxX = containerRect.width - boxRect.width;
         const maxY = containerRect.height - boxRect.height;
@@ -294,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         newHeight = Math.max(minHeight, newHeight);
 
         // crop box 가 camera-container 영역을 벗어나지 않도록 제한 (리사이즈 시 오른쪽/아래쪽만)
-        const containerRect = cameraPreview.parentElement.getBoundingClientRect(); // camera-container
+        const containerRect = video.parentElement.getBoundingClientRect(); // camera-container
         const maxX = containerRect.width - newWidth;
         const maxY = containerRect.height - newHeight;
 
@@ -330,57 +387,46 @@ document.addEventListener('DOMContentLoaded', () => {
         currentHandle = null;
     }
 
-    // 이벤트 리스너 등록
-    captureButton.addEventListener('click', capturePhoto);
-    startCamera();
+    // 썸네일 목록에 썸네일 추가 함수 (originalImageDataURL 파라미터는 그대로 유지)
+    function addThumbnailToList(thumbnailDataURL, originalImageDataURL) {
+        thumbnailArray.push(thumbnailDataURL);
 
-    // 초기화 함수
-    function reset촬영() {
-        thumbnailList.innerHTML = '';
-        thumbnailArray = [];
-        originalPhoto.src = '#';
-        originalPhotoContainer.style.display = 'none';
-        captureCanvasContext.clearRect(0, 0, captureCanvasContext.canvas.width, captureCanvasContext.canvas.height);
-        originalImageDataURL = null;
-        originalThumbnailContainer.style.display = 'none';
+        const thumbnailItem = document.createElement('li');
+        const thumbnailImage = document.createElement('img');
+        thumbnailImage.src = thumbnailDataURL;
+        thumbnailImage.style.transform = 'scaleX(-1)';
+        thumbnailImage.alt = '촬영된 썸네일';
+
+        // 수정: 썸네일 클릭 시 enhanced(배경 제거 적용) 이미지가 표시되도록 수정
+        thumbnailImage.addEventListener('click', () => {
+            originalPhoto.src = thumbnailDataURL; // enhanced 이미지 사용
+            originalPhotoContainer.style.display = 'block';
+        });
+
+        thumbnailItem.appendChild(thumbnailImage);
+        thumbnailList.prepend(thumbnailItem);
+
+        if (thumbnailList.children.length > 5) {
+            thumbnailList.removeChild(thumbnailList.lastElementChild);
+            thumbnailArray.shift();
+        }
     }
 
-    // "다시 찍기" 버튼 클릭 이벤트 리스너
-    resetButton.addEventListener('click', reset촬영);
+    // 팝업 관련 요소들
+    const popupCloseButton = document.getElementById('popup-close');
+    const popupDownloadButton = document.getElementById('popup-download');  
+
+    // 팝업 배경 클릭 시 닫기
+    originalPhotoContainer.addEventListener('click', (e) => {
+        if (e.target === originalPhotoContainer) {
+            originalPhotoContainer.style.display = 'none';
+        }
+    });
 
     // 이미지 로드 오류 처리
     originalPhoto.addEventListener('error', () => {
+        console.error('이미지 로드 실패');
         originalPhotoContainer.style.display = 'none';
+        alert('이미지를 불러오는데 실패했습니다.');
     });
-
-    // 다운로드 기능 개선 (파일 형식 선택 추가)
-    downloadButton.addEventListener('click', () => {
-        if (!enhanced_image_data_url) {
-            alert('보정된 이미지가 없습니다.');
-            return;
-        }
-
-        // 파일 형식 선택 다이얼로그
-        const format = prompt('다운로드 형식을 선택하세요 (jpg/png):', 'jpg').toLowerCase();
-        if (!['jpg', 'png'].includes(format)) {
-            alert('지원하지 않는 파일 형식입니다.');
-            return;
-        }
-
-        const link = document.createElement('a');
-        link.href = enhanced_image_data_url.replace('jpeg', format); // MIME 타입 수정
-        link.download = `증명사진.${format}`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-
-    // AI 보정 진행 상태 표시
-    function showLoading() {
-        document.getElementById('loading-overlay').style.display = 'flex';
-    }
-
-    function hideLoading() {
-        document.getElementById('loading-overlay').style.display = 'none';
-    }
 });
