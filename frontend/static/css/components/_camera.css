@@ -1,0 +1,37 @@
+/* 카메라 관련 스타일 */
+.camera {
+  &-area {
+    @apply bg-white rounded-lg p-5 shadow-md flex flex-col flex-grow;
+  }
+
+  &-container {
+    @apply relative w-full pt-[75%] bg-gray-100 rounded-lg overflow-hidden mb-4;
+  }
+
+  &-preview {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+    transform: scaleX(-1);
+  }
+}
+
+.guide-line {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+         w-[60%] h-[70%] border-2 border-dashed border-white/80;
+}
+
+.button-container {
+  @apply flex gap-3 mt-4;
+  
+  button {
+    @apply flex-1 px-6 py-3 text-base rounded-lg border-none 
+           cursor-pointer transition-colors;
+    
+    &#capture-button {
+      @apply bg-blue-600 text-white hover:bg-blue-700 flex items-center justify-center gap-2;
+    }
+    
+    &#reset-button {
+      @apply bg-red-600 text-white hover:bg-red-700 flex items-center justify-center gap-2;
+    }
+  }
+} 
