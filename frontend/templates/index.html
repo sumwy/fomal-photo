@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>운전면허 사진 가이드</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <div class="app-container">
         <header class="app-header">
             <div class="header-content">
-                <img src="/static/images/logo_main.gif" alt="로고" class="logo">
-                <h1>증명사진 AI 보정</h1>
+                <div class="logo-container">
+                    <span class="logo-text"><span class="logo-bold">Fomal</span>pix</span>
+                </div>
             </div>
         </header>
 
@@ -23,7 +25,7 @@
         <main class="app-main">
             <article class="content-wrapper">
                 <section class="camera-area">
-                    <h2>사진 촬영 영역</h2>
+                    <h2>운전면허 사진 촬영</h2>
                     
                     <div class="camera-container">
                         <video id="camera-preview" autoplay playsinline></video>
@@ -38,12 +40,16 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <button id="capture-button">사진 촬영</button>
-                        <button id="reset-button">다시 찍기</button>
+                        <button id="capture-button">
+                            <i class="fas fa-camera"></i> 사진 촬영
+                        </button>
+                        <button id="reset-button">
+                            <i class="fas fa-redo"></i> 다시 찍기
+                        </button>
                     </div>
 
                     <aside class="thumbnail-list-area">
-                        <h2>촬영된 사진 목록</h2>
+                        <h2>촬영 사진</h2>
                         <ul id="thumbnail-list">
                             {# 썸네일 이미지가 여기에 목록으로 추가됩니다. #}
                         </ul>
@@ -118,9 +124,9 @@
     <!-- 로딩 인디케이터 -->
     <div id="loading-overlay" style="display:none;">
         <div class="loading-spinner"></div>
-        <p>이미지 보정 중...</p>
+        <p>사진 보정 중...</p>
     </div>
 
-    <script src="/static/js/script.js"></script>
+    <script type="module" src="/static/js/script.js"></script>
 </body>
 </html> 

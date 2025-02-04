@@ -8,32 +8,50 @@ from rembg import remove
 
 def process_image(request):
     try:
-        data = request.json
-        image_data = data['image_data']
-        options = data.get('options', {})
+        # 이미지 검증 강화
+        if not request.is_json or 'image_data' not in request.json:
+            return {'error': 'Invalid request'}, 400
+            
+        image_data = request.json['image_data']
+        if not image_data.startswith('data:image/jpeg;base64,'):
+            return {'error': 'Only JPEG supported'}, 400
 
-        # 기존 옵션과 상관없이 배경 제거는 항상 수행하도록 강제 설정
-        options["remove_background"] = True
-        
         # 이미지 디코딩
-        image_bytes = base64.b64decode(image_data.split(',')[1])
-        image = Image.open(io.BytesIO(image_bytes))
+        image = decode_image(image_data)
         
-        # 고급 보정 처리 (배경 제거가 반드시 적용됩니다.)
-        enhanced_image = advanced_face_enhancement(image, options)
+        # 처리 파이프라인: advanced_face_enhancement 함수 활용
+        options = request.json.get('options', {})
+        # 모든 옵션을 기본 True로 설정 (추가 보정 기능 자동 적용)
+        options.setdefault('remove_background', True)
+        options.setdefault('upscale', True)
+        options.setdefault('skin_smoothing', True)
+        options.setdefault('eye_enhance', True)
+        options.setdefault('sharpness_enhance', True)
+        processed_image = advanced_face_enhancement(image, options)
         
-        # 이미지 인코딩
+        # 결과 인코딩
         buffered = io.BytesIO()
-        enhanced_image.save(buffered, format="JPEG", quality=90)
+        processed_image.save(buffered, format="JPEG", quality=95, optimize=True)
+        encoded_image = base64.b64encode(buffered.getvalue()).decode('utf-8')
+        
         return {
-            'enhanced_image': f"data:image/jpeg;base64,{base64.b64encode(buffered.getvalue()).decode()}"
+            'enhanced_image': f'data:image/jpeg;base64,{encoded_image}',
+            'metadata': {
+                'format': 'JPEG',
+                'dimensions': processed_image.size,
+                'size': len(encoded_image)
+            }
         }
-    
+
     except Exception as e:
         return {'error': str(e)}, 500
 
 def advanced_face_enhancement(image_pil, options):
     try:
+        # 배경 제거 검증
+        if not options.get('remove_background', False):
+            raise ValueError('Background removal is required')
+
         # OpenCV 변환
         try:
             image_cv = np.array(image_pil)
@@ -90,11 +108,19 @@ def advanced_face_enhancement(image_pil, options):
         except Exception as e:
             print(f"Error in PIL conversion: {e}")
             return image_pil
+
+        # 결과 이미지 검증
+        if result_image.mode != 'RGB':
+            result_image = result_image.convert('RGB')
+
+        if result_image.size != (350, 450):
+            result_image = result_image.resize((350, 450), Image.LANCZOS)
+
+        return result_image
+
     except Exception as e:
-        print(f"Error in advanced_face_enhancement: {e}")
-        import traceback
-        traceback.print_exc()
-        return image_pil  # 에러 발생시 원본 이미지 반환
+        print(f'Enhancement Error: {str(e)}')
+        raise
 
 def remove_background_rembg(image_pil):
     try:
@@ -115,3 +141,13 @@ def remove_background_rembg(image_pil):
     except Exception as e:
         print(f"Error in rembg background removal: {e}")
         return image_pil
+
+def decode_image(image_data):
+    try:
+        header, encoded = image_data.split(",", 1)
+        image_bytes = base64.b64decode(encoded)
+        image = Image.open(io.BytesIO(image_bytes))
+        return image
+    except Exception as e:
+        print(f"Error in image decoding: {str(e)}")
+        raise

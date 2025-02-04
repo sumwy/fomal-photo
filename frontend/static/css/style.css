@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     background: #f4f4f4;
 }
 
@@ -15,7 +16,7 @@ body {
 }
 
 .app-header {
-    background: #007BFF;
+    background: #4CAF50;
     color: #fff;
     padding: 15px 0;
     width: 100%;
@@ -33,17 +34,37 @@ body {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
     padding: 0 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    background-color: transparent;
 }
 
 .logo {
-    max-height: 40px;
+    max-height: 300px;
     width: auto;
     margin-right: 15px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.logo-bold { font-weight: 700;}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.logo-text {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .ad-area {
@@ -135,7 +156,7 @@ body {
     border: 1px solid #ced4da;
     border-radius: 8px;
     padding: 15px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-start;
     margin: 0;
@@ -145,12 +166,14 @@ body {
 .ad-area.left {
     order: -1;
     margin-right: 20px;
+    display: none;
 }
 
 /* 오른쪽 광고 영역 */
 .ad-area.right {
     order: 2;
     margin-left: 20px;
+    display: none;
 }
 
 /* 메인 콘텐츠 영역 */
@@ -187,7 +210,7 @@ body {
 }
 
 .guide-area h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -244,7 +267,7 @@ body {
 }
 
 .camera-area h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .camera-container {
@@ -272,10 +295,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 70%;
-    border: 2px dashed rgba(255, 255, 255, 0.8);
+    width: 65%;
+    height: 75%;
+    border: 3px dashed #8BC34A;
     border-radius: 10px;
+    opacity: 0.8;
     pointer-events: none;
 }
 
@@ -293,7 +317,7 @@ body {
 }
 
 .thumbnail-list-area h2 {
-    margin-top: 0;
+    margin-top: 5px;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
@@ -417,7 +441,7 @@ body {
     gap: 10px;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -426,23 +450,31 @@ body {
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 8px;
-    border: none;
+    border: 2px solid transparent;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 #capture-button {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
 }
 
 #capture-button:hover {
-    background-color: #0056b3;
+    background-color: #43A047;
+    border-color: #43A047;
+    transform: translateY(-2px);
 }
 
 #reset-button {
     background-color: #dc3545;
     color: white;
+    border-color: #dc3545;
 }
 
 #reset-button:hover {
@@ -655,4 +687,83 @@ body {
 /* 체크박스 선택시 강조 색상 적용 (Chrome 최신 버전 등 지원) */
 .options input[type="checkbox"] {
     accent-color: #007BFF;
+}
+
+/* 모든 버튼을 팝업 버튼 스타일과 동일하게 적용 */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#download-button {
+    background-color: #4CAF50;
+    &:hover {
+        background-color: #45a049;
+    }
+    &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+}
+
+/* 다운로드 기록 관련 스타일 삭제 */
+.download-history-area,
+.history-list,
+.history-item,
+.redownload-btn,
+.delete-btn {
+  display: none !important;
+}
+
+/* 썸네일 그리드 레이아웃 */
+.thumbnail-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+/* 로딩 인디케이터 애니메이션 */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 반응형 레이아웃 */
+@media (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+  
+  .camera-container {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+#loading-overlay p {
+    margin-top: 15px;
+    font-size: 1.1em;
 }
