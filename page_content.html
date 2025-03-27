@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="ko"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정</title>
+    <meta name="description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다. 무료로 사용하세요.">
+    <meta name="keywords" content="증명사진, 운전면허 사진, 여권 사진, 취업 사진, 사진 보정, 배경 제거, 얼굴 인식, 무료 사진 도구">
+    <meta name="author" content="Fomal Photo">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정">
+    <meta property="og:description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomalpix.com">
+    <link rel="canonical" href="https://fomalpix.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정">
+    <meta name="twitter:description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "증명사진 자동 보정 서비스",
+      "description": "운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.",
+      "applicationCategory": "Photography",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <span class="logo-text"><span class="logo-bold">Fomal</span>pix</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <article class="content-wrapper">
+                <section class="camera-area">
+                    <h1>증명사진 자동 보정 서비스</h1>
+                    
+                    <div class="camera-container">
+                        <video id="camera-preview" autoplay="" playsinline=""></video>
+                        <div class="guide-line"></div>
+                        <div id="crop-overlay" style="display: none;">
+                            <div id="crop-box">
+                                <div class="crop-handle top-left"></div>
+                                <div class="crop-handle top-right"></div>
+                                <div class="crop-handle bottom-left"></div>
+                                <div class="crop-handle bottom-right"></div>
+                            </div>
+                        </div>
+                    <canvas class="guideline-canvas" width="600" height="450" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none;"></canvas></div>
+                    <div class="button-container">
+                        <button id="capture-button">
+                            <i class="fas fa-camera"></i> 사진 촬영
+                        </button>
+                        <button id="reset-button">
+                            <i class="fas fa-redo"></i> 다시 찍기
+                        </button>
+                        <button id="toggle-guidelines-button">
+                            <i class="fas fa-ruler-combined"></i> 가이드라인
+                        </button>
+                        <button id="switch-camera">
+                            <i class="fas fa-sync"></i> 카메라 전환
+                        </button>
+                    </div>
+
+                    <aside class="thumbnail-list-area">
+                        <h2>촬영 사진</h2>
+                        <ul id="thumbnail-list">
+                            {# 썸네일 이미지가 여기에 목록으로 추가됩니다. #}
+                        </ul>
+                    </aside>
+
+                    <div id="original-photo-container" style="display: none;">
+                        <div class="photo-edit-container">
+                            <img id="original-photo" src="#" alt="원본 사진">
+                        </div>
+                        
+                        <div id="popup-buttons" class="popup-buttons">
+                            <button id="popup-close" class="popup-button">닫기</button>
+                            <button id="popup-download" class="popup-button">다운로드</button>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="guide-area">
+                    <section id="photo-specifications">
+                        <h2>사진 규격 안내</h2>
+                        <p>증명사진은 다음 규격을 준수해야 합니다.</p>
+                        <ul>
+                            <li><strong>크기:</strong> 3.5cm x 4.5cm</li>
+                            <li><strong>배경:</strong> 흰색 (자동으로 변환됩니다)</li>
+                        </ul>
+                        <p class="photo-tip">중앙에 얼굴이 오도록 촬영하세요. 나머지는 자동으로 보정됩니다.</p>
+                    </section>
+                    
+                    <!-- 사용 가이드 섹션 추가 -->
+                    <section id="usage-guide">
+                        <h2>사용 가이드</h2>
+                        <ol>
+                            <li><strong>카메라 허용:</strong> 브라우저의 카메라 접근 권한을 허용해주세요.</li>
+                            <li><strong>얼굴 위치:</strong> 얼굴이 중앙에 오도록 조정하세요.</li>
+                            <li><strong>사진 촬영:</strong> 준비가 되면 '사진 촬영' 버튼을 클릭하세요.</li>
+                            <li><strong>자동 보정:</strong> 시스템이 자동으로 얼굴 위치를 보정하고 배경을 제거합니다.</li>
+                            <li><strong>다운로드:</strong> 완성된 사진을 다운로드하여 사용하세요.</li>
+                        </ol>
+                        <p class="photo-tip">밝은 곳에서 촬영하면 더 좋은 결과를 얻을 수 있습니다.</p>
+                    </section>
+                </aside>
+            </article>
+        </main>
+    </div>
+
+    <!-- 로딩 인디케이터 -->
+    <div id="loading-overlay" style="display:none;">
+        <div class="loading-spinner"></div>
+        <p>사진 보정 중...</p>
+    </div>
+
+    <script type="module" src="/static/js/script.js"></script>
+
+ </body></html>
