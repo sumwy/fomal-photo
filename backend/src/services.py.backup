@@ -1,0 +1,233 @@
+from flask import request
+from PIL import Image, ImageEnhance, ImageFilter
+import io
+import base64
+import cv2
+import numpy as np
+from rembg import remove
+# face_recognition 라이브러리 대신 OpenCV 사용
+# import face_recognition
+
+def process_image(image_data, options=None):
+    try:
+        # 옵션이 None이면 빈 딕셔너리로 초기화
+        if options is None:
+            options = {}
+            
+        # 이미지 데이터 검증
+        if not image_data:
+            return {'error': 'Invalid image data'}, 400
+            
+        # base64 데이터 형식 확인 및 처리
+        if isinstance(image_data, str) and image_data.startswith('data:image/jpeg;base64,'):
+            # 이미지 데이터에서 base64 부분만 추출
+            image_data = image_data.split(',')[1]
+        
+        # 이미지 디코딩
+        image = decode_image(f'data:image/jpeg;base64,{image_data}')
+        
+        # 처리 파이프라인: advanced_face_enhancement 함수 활용
+        # 모든 옵션을 기본 True로 설정 (추가 보정 기능 자동 적용)
+        options.setdefault('remove_background', True)
+        options.setdefault('upscale', True)
+        options.setdefault('skin_smoothing', True)
+        options.setdefault('eye_enhance', True)
+        options.setdefault('sharpness_enhance', True)
+        options.setdefault('adjust_face_position', True)  # 얼굴 위치 보정 옵션 추가
+        
+        processed_image = advanced_face_enhancement(image, options)
+        
+        # 결과 인코딩
+        buffered = io.BytesIO()
+        processed_image.save(buffered, format="JPEG", quality=95, optimize=True)
+        encoded_image = base64.b64encode(buffered.getvalue()).decode('utf-8')
+        
+        return {
+            'enhanced_image': encoded_image,
+            'metadata': {
+                'format': 'JPEG',
+                'dimensions': processed_image.size,
+                'size': len(encoded_image)
+            }
+        }
+
+    except Exception as e:
+        return {'error': str(e)}, 500
+
+def advanced_face_enhancement(image_pil, options):
+    try:
+        # 배경 제거 검증
+        if not options.get('remove_background', False):
+            raise ValueError('Background removal is required')
+
+        # OpenCV 변환
+        try:
+            image_cv = np.array(image_pil)
+            image_cv = cv2.cvtColor(image_cv, cv2.COLOR_RGB2BGR)
+        except Exception as e:
+            print(f"Error in OpenCV conversion: {e}")
+            return image_pil
+
+        # 얼굴 위치 보정
+        try:
+            if options.get('adjust_face_position', False):
+                image_cv = adjust_face_position_opencv(image_cv)  # OpenCV 기반 함수로 변경
+        except Exception as e:
+            print(f"Error in face position adjustment: {e}")
+            # 얼굴 위치 보정 실패 시 원본 이미지로 계속 진행
+
+        # 업스케일링
+        try:
+            if options.get('upscale', False):
+                scale_factor = options.get('scale_factor', 2)  # 기본 스케일 2배
+                height, width = image_cv.shape[:2]
+                new_height, new_width = int(height * scale_factor), int(width * scale_factor)
+                image_cv = cv2.resize(image_cv, (new_width, new_height), interpolation=cv2.INTER_CUBIC)
+        except Exception as e:
+            print(f"Error in upscaling: {e}")
+            return Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))
+
+        # 피부 보정
+        try:
+            if options.get('skin_smoothing', False):
+                image_cv = cv2.bilateralFilter(image_cv, 9, 75, 75)
+        except Exception as e:
+            print(f"Error in skin smoothing: {e}")
+            return Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))
+
+        # 눈 보정
+        try:
+            if options.get('eye_enhance', False):
+                image_cv = cv2.addWeighted(image_cv, 1.1, np.zeros(image_cv.shape, image_cv.dtype), 0, 20)
+        except Exception as e:
+            print(f"Error in eye enhancement: {e}")
+            return Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))
+        
+        # 배경 제거
+        try:
+            if options.get('remove_background', False):
+                image_pil = remove_background_rembg(image_pil)
+                image_cv = np.array(image_pil)
+                image_cv = cv2.cvtColor(image_cv, cv2.COLOR_RGB2BGR)
+        except Exception as e:
+            print(f"Error in background removal: {e}")
+            return Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))
+
+        # PIL 이미지로 변환
+        image_pil = Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))
+            
+        # 선명도 개선
+        try:
+            if options.get('sharpness_enhance', False):
+                enhancer = ImageEnhance.Sharpness(image_pil)
+                image_pil = enhancer.enhance(1.5)  # 선명도 1.5배 증가
+        except Exception as e:
+            print(f"Error in sharpness enhancement: {e}")
+            
+        return image_pil
+
+    except Exception as e:
+        print(f"Error in advanced face enhancement: {e}")
+        return image_pil
+
+# OpenCV 기반 얼굴 위치 조정 함수로 대체
+def adjust_face_position_opencv(image_cv):
+    """
+    OpenCV의 Haar Cascade를 사용하여 얼굴 위치를 인식하고 표준 사진 규격에 맞게 위치를 조정합니다.
+    """
+    # 그레이스케일로 변환
+    gray = cv2.cvtColor(image_cv, cv2.COLOR_BGR2GRAY)
+    
+    # 얼굴 감지기 로드
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    
+    # 얼굴 감지
+    faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+    
+    if len(faces) == 0:
+        print("No face detected")
+        return image_cv
+    
+    # 첫 번째 얼굴 사용 (가장 큰 얼굴 또는 중앙에 가까운 얼굴 선택 로직 추가 가능)
+    x, y, w, h = faces[0]
+    
+    # 얼굴 중심점 계산
+    face_center_x = x + w // 2
+    face_center_y = y + h // 2
+    
+    # 이미지 중심점 계산
+    height, width = image_cv.shape[:2]
+    image_center_x = width // 2
+    image_center_y = height // 2
+    
+    # 이동해야 할 거리 계산
+    x_shift = image_center_x - face_center_x
+    
+    # 표준 사진에서 눈 위치는 상단에서 약 32-36% 위치에 있어야 함
+    ideal_eye_position_y = int(height * 0.34)  # 34%가 눈 위치의 중간값
+    
+    # 눈 위치 추정 (얼굴 상단에서 약 20% 아래)
+    eye_y = y + int(h * 0.2)
+    
+    # 눈 위치를 이상적인 위치로 이동하기 위한 y축 이동 거리
+    y_shift = ideal_eye_position_y - eye_y
+    
+    # 이동 행렬 생성
+    translation_matrix = np.float32([[1, 0, x_shift], [0, 1, y_shift]])
+    
+    # 이미지 이동
+    adjusted_image = cv2.warpAffine(image_cv, translation_matrix, (width, height), 
+                                   borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255))
+    
+    return adjusted_image
+
+def remove_background_rembg(image_pil):
+    """
+    rembg 라이브러리를 사용하여 배경을 제거합니다.
+    """
+    try:
+        # 배경 제거
+        output = remove(image_pil)
+        
+        # 투명 배경을 흰색으로 변경
+        background = Image.new("RGBA", output.size, (255, 255, 255, 255))
+        output = Image.alpha_composite(background.convert("RGBA"), output)
+        
+        return output.convert("RGB")
+    except Exception as e:
+        print(f"Error in background removal: {e}")
+        return image_pil
+
+def decode_image(image_data):
+    """
+    Base64 인코딩된 이미지 데이터를 PIL Image 객체로 변환합니다.
+    """
+    try:
+        # Base64 데이터 추출
+        image_data = image_data.split(',')[1]
+        image_bytes = base64.b64decode(image_data)
+        
+        # PIL Image로 변환
+        image = Image.open(io.BytesIO(image_bytes))
+        return image
+    except Exception as e:
+        raise ValueError(f"Image decoding failed: {e}")
+
+# 호환성을 위한 스텁 함수들
+def apply_beauty_filter(image, strength=0.5):
+    """
+    뷰티 필터 스텁 함수 - 원본 이미지 반환
+    """
+    return image
+
+def apply_color_filter(image, filter_type='natural'):
+    """
+    색상 필터 스텁 함수 - 원본 이미지 반환
+    """
+    return image
+
+def adjust_contrast(image, contrast_factor=1.15):
+    """
+    대비 조절 스텁 함수 - 원본 이미지 반환
+    """
+    return image

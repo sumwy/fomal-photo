@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>운전면허 사진 가이드</title>
+    <title>증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정</title>
+    <meta name="description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다. 무료로 사용하세요.">
+    <meta name="keywords" content="증명사진, 운전면허 사진, 여권 사진, 취업 사진, 사진 보정, 배경 제거, 얼굴 인식, 무료 사진 도구">
+    <meta name="author" content="Fomal Photo">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정">
+    <meta property="og:description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomalpix.com">
+    <link rel="canonical" href="https://fomalpix.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정">
+    <meta name="twitter:description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/static/css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "증명사진 자동 보정 서비스",
+      "description": "운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.",
+      "applicationCategory": "Photography",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    }
+    </script>
 </head>
 <body>
     <div class="app-container">
@@ -17,15 +44,10 @@
             </div>
         </header>
 
-        <aside class="ad-area left">
-            <!-- 왼쪽 광고 영역 -->
-            여기는 광고 영역 (좌)
-        </aside>
-
         <main class="app-main">
             <article class="content-wrapper">
                 <section class="camera-area">
-                    <h2>운전면허 사진 촬영</h2>
+                    <h1>증명사진 자동 보정 서비스</h1>
                     
                     <div class="camera-container">
                         <video id="camera-preview" autoplay playsinline></video>
@@ -46,6 +68,12 @@
                         <button id="reset-button">
                             <i class="fas fa-redo"></i> 다시 찍기
                         </button>
+                        <button id="toggle-guidelines-button">
+                            <i class="fas fa-ruler-combined"></i> 가이드라인
+                        </button>
+                        <button id="switch-camera">
+                            <i class="fas fa-sync"></i> 카메라 전환
+                        </button>
                     </div>
 
                     <aside class="thumbnail-list-area">
@@ -56,7 +84,10 @@
                     </aside>
 
                     <div id="original-photo-container" style="display: none;">
-                        <img id="original-photo" src="#" alt="원본 사진">
+                        <div class="photo-edit-container">
+                            <img id="original-photo" src="#" alt="원본 사진">
+                        </div>
+                        
                         <div id="popup-buttons" class="popup-buttons">
                             <button id="popup-close" class="popup-button">닫기</button>
                             <button id="popup-download" class="popup-button">다운로드</button>
@@ -67,58 +98,29 @@
                 <aside class="guide-area">
                     <section id="photo-specifications">
                         <h2>사진 규격 안내</h2>
-                        <p>운전면허 사진은 다음 규격을 준수해야 합니다.</p>
+                        <p>증명사진은 다음 규격을 준수해야 합니다.</p>
                         <ul>
                             <li><strong>크기:</strong> 3.5cm x 4.5cm</li>
-                            <li><strong>해상도:</strong> 온라인 제출 시 가로 350픽셀, 세로 450픽셀</li>
-                            <li><strong>파일 형식:</strong> JPG (JPEG), 파일 크기 250KB 이하</li>
-                            <li><strong>촬영 시기:</strong> 최근 6개월 이내 촬영한 컬러 사진</li>
+                            <li><strong>배경:</strong> 흰색 (자동으로 변환됩니다)</li>
                         </ul>
+                        <p class="photo-tip">중앙에 얼굴이 오도록 촬영하세요. 나머지는 자동으로 보정됩니다.</p>
                     </section>
-
-                    <section id="background-specifications">
-                        <h3>배경</h3>
-                        <ul>
-                            <li><strong>색상:</strong> 흰색 또는 연한 회색 배경</li>
-                            <li><strong>특징:</strong> 그림자나 패턴 없이 균일한 배경</li>
-                        </ul>
-                    </section>
-
-                    <section id="face-pose-specifications">
-                        <h3>얼굴 및 자세</h3>
-                        <ul>
-                            <li><strong>자세:</strong> 정면 응시, 얼굴 중앙 위치</li>
-                            <li><strong>표정:</strong> 자연스러운 표정, 입을 다문 상태</li>
-                            <li><strong>눈:</strong> 선명하게 보여야 함, 안경 착용 시 렌즈 반사 주의</li>
-                        </ul>
-                    </section>
-
-                    <section id="dress-accessories-specifications">
-                        <h3>의상 및 액세서리</h3>
-                        <ul>
-                            <li><strong>의상:</strong> 배경과 대비되는 색상, 밝은색 옷 피하기</li>
-                            <li><strong>액세서리:</strong> 모자, 귀걸이, 목걸이 등 얼굴 가리는 장신구 착용 금지</li>
-                            <li><strong>안경:</strong> 착용 가능, 렌즈 반사 및 눈 가림 주의</li>
-                        </ul>
-                    </section>
-
-                    <section id="quality-specifications">
-                        <h3>사진 품질 및 추가 주의사항</h3>
-                        <ul>
-                            <li><strong>인화지:</strong> 사진 인화 용지에 출력된 고해상도 사진 권장</li>
-                            <li><strong>수정 금지:</strong> 포토샵 등 수정된 사진 사용 불가</li>
-                            <li><strong>얼굴 비율:</strong> 사진 전체의 70~80%를 얼굴이 차지하도록 촬영</li>
-                            <li><strong>배경 일관성:</strong> 배경에 다른 사물이나 사람 포함 금지</li>
-                        </ul>
+                    
+                    <!-- 사용 가이드 섹션 추가 -->
+                    <section id="usage-guide">
+                        <h2>사용 가이드</h2>
+                        <ol>
+                            <li><strong>카메라 허용:</strong> 브라우저의 카메라 접근 권한을 허용해주세요.</li>
+                            <li><strong>얼굴 위치:</strong> 얼굴이 중앙에 오도록 조정하세요.</li>
+                            <li><strong>사진 촬영:</strong> 준비가 되면 '사진 촬영' 버튼을 클릭하세요.</li>
+                            <li><strong>자동 보정:</strong> 시스템이 자동으로 얼굴 위치를 보정하고 배경을 제거합니다.</li>
+                            <li><strong>다운로드:</strong> 완성된 사진을 다운로드하여 사용하세요.</li>
+                        </ol>
+                        <p class="photo-tip">밝은 곳에서 촬영하면 더 좋은 결과를 얻을 수 있습니다.</p>
                     </section>
                 </aside>
             </article>
         </main>
-
-        <aside class="ad-area right">
-            <!-- 오른쪽 광고 영역 -->
-            여기는 광고 영역 (우)
-        </aside>
     </div>
 
     <!-- 로딩 인디케이터 -->
