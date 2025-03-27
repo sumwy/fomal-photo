@@ -9,7 +9,7 @@ export class CameraManager {
       video: { 
         width: { ideal: 1280 }, 
         height: { ideal: 720 },
-        facingMode: 'environment' 
+        facingMode: 'user' // 전면 카메라를 기본값으로 설정
       } 
     };
     this.guidelineCanvas = null;

@@ -147,6 +147,15 @@ export default class App {
       tempCanvas.height = video.videoHeight || 480;
       const context = tempCanvas.getContext('2d');
       
+      // 전면 카메라 사용 시 이미지 반전 확인
+      const isFrontCamera = this.cameraManager?.constraints?.video?.facingMode === 'user';
+      
+      if (isFrontCamera) {
+        // 전면 카메라일 경우 이미지 수평 반전 처리
+        context.translate(tempCanvas.width, 0);
+        context.scale(-1, 1);
+      }
+      
       // 비디오 프레임 캡처
       context.drawImage(video, 0, 0, tempCanvas.width, tempCanvas.height);
       const imageData = tempCanvas.toDataURL('image/jpeg');
