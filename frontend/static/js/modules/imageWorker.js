@@ -148,4 +148,105 @@ self.addEventListener('message', async (event) => {
       data: { error: error.message, requestId: event.data?.data?.requestId }
     });
   }
-}); 
+});
+
+/**
+ * 이미지 처리 요청
+ * @param {Object} data - 요청 데이터
+ * @param {function} callback - 콜백 함수
+ */
+async function processImage(data, callback) {
+  try {
+    const { imageData, url, processingOptions, requestId, retry } = data;
+    
+    // 이미지 데이터가 없으면 오류 발생
+    if (!imageData) {
+      callback({
+        type: 'error',
+        data: {
+          error: '유효한 이미지 데이터가 없습니다.',
+          requestId
+        }
+      });
+      return;
+    }
+    
+    // FormData 객체 생성
+    const formData = new FormData();
+    
+    // 이미지 데이터를 Blob으로 변환하여 추가
+    try {
+      // base64 이미지 데이터를 Blob으로 변환
+      if (imageData.startsWith('data:image/')) {
+        formData.append('image', imageData);
+      } else {
+        formData.append('image', `data:image/jpeg;base64,${imageData}`);
+      }
+      
+      // 처리 옵션 추가
+      if (processingOptions) {
+        Object.entries(processingOptions).forEach(([key, value]) => {
+          formData.append(key, value === true ? 'true' : value === false ? 'false' : value);
+        });
+      }
+    } catch (error) {
+      console.error('FormData 생성 오류:', error);
+      callback({
+        type: 'error',
+        data: {
+          error: '이미지 데이터 처리 중 오류가 발생했습니다.',
+          requestId
+        }
+      });
+      return;
+    }
+    
+    // 서버에 처리 요청
+    try {
+      console.log(`Worker: 이미지 처리 요청 중... (재시도: ${retry || 0})`);
+      
+      const response = await fetch(url, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        }
+      });
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`서버 오류 (${response.status}): ${errorText}`);
+        throw new Error(`서버 오류: ${response.status} - ${errorText.substring(0, 100)}`);
+      }
+      
+      const result = await response.json();
+      
+      // 결과 반환
+      callback({
+        type: 'process_result',
+        data: {
+          result,
+          requestId
+        }
+      });
+    } catch (error) {
+      console.error('이미지 처리 요청 오류:', error);
+      callback({
+        type: 'error',
+        data: {
+          error: `이미지 처리 중 오류가 발생했습니다: ${error.message}`,
+          requestId
+        }
+      });
+    }
+  } catch (error) {
+    console.error('Worker 내부 오류:', error);
+    callback({
+      type: 'error',
+      data: {
+        error: `Worker 내부 오류: ${error.message}`,
+        requestId: data?.requestId
+      }
+    });
+  }
+} 

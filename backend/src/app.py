@@ -4,6 +4,7 @@ import base64
 import re
 import logging
 from typing import Dict, Any, Optional, Union
+from datetime import datetime
 
 # 현재 디렉토리와 부모 디렉토리를 Python 경로에 추가
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -18,13 +19,19 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 # 기존 services.py 대신 모듈화된 image_processor 가져오기
 from modules.image_processor import process_image, clear_image_cache, get_cache_stats
 
-# 로깅 설정
+# 로깅 설정 (디버그 레벨로 변경)
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler()]
+    level=logging.DEBUG,  # INFO에서 DEBUG로 변경
+    format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s',  # 파일명과 라인 번호 추가
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler('backend_debug.log')  # 파일로도 로그 저장
+    ]
 )
 logger = logging.getLogger(__name__)
+
+# 시작 로그 추가
+logger.info("===== 포말 포토 백엔드 서버 시작 =====")
 
 app = Flask(__name__, 
             static_folder='../../frontend/static',
@@ -42,7 +49,7 @@ def add_security_headers(response):
     # HSTS 설정 (HTTPS 강제)
     # response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
     # 컨텐츠 보안 정책
-    response.headers['Content-Security-Policy'] = "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    response.headers['Content-Security-Policy'] = "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
     # 리퍼러 정책
     response.headers['Referrer-Policy'] = 'same-origin'
     return response
@@ -59,6 +66,26 @@ main_blueprint = Blueprint('main', __name__)
 def index():
     return render_template('index.html')
 
+@main_blueprint.route('/status', methods=['GET'])
+def status():
+    """서버 상태 확인 엔드포인트"""
+    try:
+        return jsonify({
+            'success': True,
+            'status': 'ok',
+            'timestamp': str(datetime.now()),
+            'server_info': {
+                'name': 'Fomal Photo Backend',
+                'version': '1.0.0'
+            }
+        })
+    except Exception as e:
+        logger.error(f"Error in status endpoint: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 # 이미지 검증 유틸리티 함수
 def validate_image_data(image_data: Optional[str]) -> bool:
     """
@@ -71,29 +98,43 @@ def validate_image_data(image_data: Optional[str]) -> bool:
         bool: 유효한 이미지인 경우 True, 그렇지 않으면 False
     """
     if not image_data:
+        logger.warning("Empty image data received")
         return False
     
-    # base64 형식 검증
-    try:
-        # 데이터가 base64 형식인지 확인
-        if ',' in image_data:
-            # 'data:image/jpeg;base64,' 같은 prefix 제거
-            image_data = image_data.split(',')[1]
-        
-        # base64 디코딩 시도
-        decoded_data = base64.b64decode(image_data)
-        
-        # 최소 크기 검증 (빈 이미지가 아닌지)
-        if len(decoded_data) < 100:
-            return False
+    # 디버그 정보 로깅
+    logger.debug(f"Validating image data, length: {len(image_data)}")
+    logger.debug(f"Image data starts with: {image_data[:30]}")
+    
+    # data:image/ 형식이 맞는지 확인
+    if 'data:image/' in image_data:
+        try:
+            # 데이터가 base64 형식인지 확인
+            if ',' in image_data:
+                # 'data:image/jpeg;base64,' 같은 prefix 제거
+                img_format = image_data.split(';')[0].split('/')[1]
+                logger.debug(f"Image format detected: {img_format}")
+                image_data = image_data.split(',')[1]
             
-        # 최대 크기 검증 (10MB)
-        if len(decoded_data) > 10 * 1024 * 1024:
-            return False
+            # base64 디코딩 시도
+            decoded_data = base64.b64decode(image_data)
             
-        return True
-    except Exception as e:
-        logger.error(f"Image validation error: {str(e)}")
+            # 최소 크기 검증 (빈 이미지가 아닌지)
+            if len(decoded_data) < 10:  # 더 작은 값으로 변경
+                logger.warning(f"Image too small: {len(decoded_data)} bytes")
+                return False
+                
+            # 최대 크기 검증 (10MB)
+            if len(decoded_data) > 10 * 1024 * 1024:
+                logger.warning(f"Image too large: {len(decoded_data)} bytes")
+                return False
+                
+            logger.debug(f"Image validation successful: {len(decoded_data)} bytes")
+            return True
+        except Exception as e:
+            logger.error(f"Image validation error: {str(e)}")
+            return False
+    else:
+        logger.warning("Invalid image format: missing 'data:image/' prefix")
         return False
 
 @main_blueprint.route('/process_image', methods=['POST'])
@@ -114,7 +155,7 @@ def process_image_route():
         if image_data and ',' in image_data:
             image_data = image_data.split(',')[1]
         
-        # 이미지 처리 옵션 설정 및 검증
+        # 이미지 처리 옵션 직접 가져오기
         options = {
             'adjust_face_position': request.form.get('adjust_face_position', 'true').lower() == 'true',
             'remove_background': request.form.get('remove_background', 'true').lower() == 'true',
@@ -135,13 +176,16 @@ def process_image_route():
             except ValueError:
                 pass  # 변환 실패 시 기본값 사용
         
+        # 디버그 로그 추가
+        logger.debug(f"Processing image with options: {options}")
+        
         # 이미지 처리 - 이제 모듈화된 process_image 함수 사용
         result = process_image(image_data, options)
         
         # 처리된 이미지 반환
         return jsonify({
             'success': True,
-            'processed_image': f"data:image/jpeg;base64,{result['enhanced_image']}",
+            'enhanced_image': result['enhanced_image'],
             'metadata': result.get('metadata', {})
         })
     except Exception as e:

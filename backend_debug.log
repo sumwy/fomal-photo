@@ -1,0 +1,1352 @@
+2025-03-27 14:14:48,198 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:14:48,248 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:14:48,264 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:14:48,866 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "GET / HTTP/1.1" 200 -
+2025-03-27 14:14:48,889 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "GET / HTTP/1.1" 200 -
+2025-03-27 14:14:48,899 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,905 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,906 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,910 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "GET / HTTP/1.1" 200 -
+2025-03-27 14:14:48,917 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,919 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,919 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,919 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,920 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,920 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,924 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,926 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:14:48,927 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:14:48,928 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:14:48,965 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:14:48,965 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:14:48] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:13,737 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:15:13,806 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:15:13,807 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:15:13,808 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:15:15,003 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:15:15,053 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:15:15,071 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:15:15,099 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:15,120 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,122 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,125 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:15,130 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,139 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:15,142 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,143 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,147 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,149 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,150 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,151 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,154 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,157 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:15:15,157 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:15:15,158 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:15,218 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:15:15,220 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:15] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:19,483 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:19,497 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,497 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:15:19,498 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,503 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:19,505 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:19,510 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,510 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,510 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,514 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,515 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,517 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,518 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,519 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:15:19,520 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:15:19,524 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:15:19,530 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:15:19,531 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:19,552 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:15:21,347 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,361 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,362 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:15:21,363 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,369 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,374 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,378 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,380 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,381 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,382 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,383 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,387 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,387 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,389 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:15:21,391 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:15:21,391 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,396 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:15:21,399 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:21,418 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:15:21,610 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,625 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:15:21,626 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,627 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,630 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,638 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,642 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,642 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,644 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,649 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,649 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,650 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,652 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,654 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:15:21,654 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,655 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:15:21,661 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:15:21,662 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:21,684 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:15:21,805 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,823 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,825 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,826 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:15:21,827 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,839 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:15:21,840 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,841 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,842 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,842 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,843 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,845 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,848 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,851 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:15:21,853 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:15:21,853 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:15:21,861 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:15:21,862 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:15:21,881 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:15:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:15:25,289 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/modules/image_processor.py', reloading
+2025-03-27 14:15:25,545 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:15:26,814 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:15:26,866 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:15:26,882 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:15:51,059 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:15:51,117 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:15:51,117 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:15:51,118 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:15:52,149 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:15:52,197 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:15:52,212 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:16:37,961 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/modules/image_processor.py', reloading
+2025-03-27 14:16:38,183 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:16:39,281 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:16:39,328 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:16:39,344 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:16:41,522 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:41,540 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:41,545 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,549 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:16:41,552 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,557 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:41,559 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,560 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,562 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,565 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,566 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,567 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,568 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,573 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:16:41,573 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:16:41,575 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:16:41,725 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:16:41,726 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:16:41,729 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:41] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,798 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:43,811 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,812 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,814 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,817 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:43,821 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,824 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,825 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,828 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:43,828 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,829 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,830 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,834 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,835 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,841 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:16:43,841 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:16:43,844 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:43,853 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:43] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:16:45,493 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:45,508 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,509 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,512 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:45,513 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,521 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:45,523 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,525 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,525 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,526 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,527 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,529 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,531 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,533 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:45,534 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:16:45,535 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:16:45,541 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:16:45,542 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:45] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,898 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:52,923 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:52,932 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,937 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,937 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,951 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "GET / HTTP/1.1" 200 -
+2025-03-27 14:16:52,958 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,961 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,971 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,976 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,982 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,987 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,987 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,990 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:16:52,992 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:16:52,992 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:52] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:16:53,000 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:53] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:16:53,002 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:16:53] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,591 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "GET / HTTP/1.1" 200 -
+2025-03-27 14:17:08,606 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,607 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,607 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,608 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "GET / HTTP/1.1" 200 -
+2025-03-27 14:17:08,622 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "GET / HTTP/1.1" 200 -
+2025-03-27 14:17:08,626 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,627 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,628 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,628 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,630 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,631 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,633 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,634 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:17:08,635 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:17:08,636 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:17:08,639 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "GET /api/cache HTTP/1.1" 200 -
+2025-03-27 14:17:08,640 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:17:08] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,180 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:11,194 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,199 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:11,200 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,208 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,208 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,209 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,210 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,212 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,212 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,214 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,215 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:11,221 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:11] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:13,422 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:13,466 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:18:13,470 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:13,470 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,482 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,482 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,483 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,483 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,484 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,484 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,489 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,489 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:18:13,496 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:13,513 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:18:19,710 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:19,721 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,721 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,723 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:19,727 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,734 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,734 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,735 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,736 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,736 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,737 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,740 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:19,745 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:19] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,515 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,526 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,531 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,531 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,537 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,541 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,542 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,542 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,543 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,544 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,545 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,546 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,554 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,718 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,732 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,734 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,734 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,740 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,742 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,743 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,744 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,746 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,747 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,748 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,748 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,753 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,891 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,908 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,909 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:20,910 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,919 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,921 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,922 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,923 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,924 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,924 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,926 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,928 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:20,939 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,077 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,090 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,091 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,097 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,104 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,105 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,106 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,106 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,107 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,108 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,110 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,111 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,121 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,236 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,252 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,254 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,255 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,262 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,262 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,266 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,267 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,268 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,268 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,270 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,271 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,277 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,413 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,424 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,425 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,430 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:21,435 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,437 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,437 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,438 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,438 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,439 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,439 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,442 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:21,453 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:22,579 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:22,593 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,593 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:18:22,598 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:22,606 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,606 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,607 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,607 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,611 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,612 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,614 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,615 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:18:22,623 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:22,645 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:18:36,537 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:36,553 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,570 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "GET / HTTP/1.1" 200 -
+2025-03-27 14:18:36,571 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,596 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,596 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,597 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,599 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,600 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,601 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,604 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,605 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:18:36,610 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:18:36] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:20:59,213 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:20:59,272 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:20:59,272 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:20:59,273 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:21:00,335 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:21:00,382 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:21:00,397 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:21:02,226 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "GET / HTTP/1.1" 200 -
+2025-03-27 14:21:02,245 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,246 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "GET / HTTP/1.1" 200 -
+2025-03-27 14:21:02,247 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,256 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,258 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,259 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,260 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,260 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,263 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,265 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,265 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:02,270 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:02] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:03,452 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:21:03,466 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,468 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:21:03,469 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:21:03,484 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,484 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,485 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,487 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,490 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,493 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,494 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,495 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:21:03,502 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:21:03,522 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:21:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:25:31,115 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:25:31,174 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:25:31,174 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:25:31,175 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:25:32,299 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:25:32,345 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:25:32,359 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:25:37,134 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET / HTTP/1.1" 200 -
+2025-03-27 14:25:37,169 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET / HTTP/1.1" 200 -
+2025-03-27 14:25:37,177 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,178 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:25:37,190 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,192 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,193 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,193 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,197 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,199 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,200 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,204 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:25:37,211 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:25:37,231 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:25:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:29:56,473 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET / HTTP/1.1" 200 -
+2025-03-27 14:29:56,488 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:29:56,489 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,490 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET / HTTP/1.1" 200 -
+2025-03-27 14:29:56,499 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,500 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,500 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,501 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,502 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,502 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,506 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,508 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:29:56,525 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:29:56,573 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:29:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:30:12,006 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:12,021 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,021 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,026 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:12,034 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,035 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,036 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,039 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,039 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,041 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,042 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,042 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:12,051 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:12] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:16,373 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:30:16,440 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:30:16,441 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:30:16,442 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:30:17,873 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:30:17,923 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:30:17,938 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:30:17,962 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:17] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:17,977 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:17] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:17,984 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:17] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:17,985 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,001 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,002 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,003 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,006 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,008 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,008 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,011 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,011 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:18,018 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:18] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:19,063 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:19,080 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:30:19,082 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:19,082 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,094 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,094 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,095 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,095 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,096 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,098 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,100 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,105 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:30:19,110 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:19,130 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:30:20,540 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,554 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,555 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,560 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,568 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,569 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,570 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,572 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,572 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,572 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,575 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,576 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,585 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,762 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,778 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,780 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,782 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,791 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,791 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,792 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,793 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,793 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,794 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,797 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,798 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,803 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,954 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,967 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,968 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,971 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:20,981 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,983 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,983 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,984 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,984 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,984 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,987 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:20,989 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,000 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,121 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:21,138 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,139 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,142 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "GET / HTTP/1.1" 200 -
+2025-03-27 14:30:21,148 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,150 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,151 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,153 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,156 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,156 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,158 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,159 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:30:21,167 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:30:21] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:34:50,520 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET / HTTP/1.1" 200 -
+2025-03-27 14:34:50,536 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:34:50,537 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,537 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET / HTTP/1.1" 200 -
+2025-03-27 14:34:50,548 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,548 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,549 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,549 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,550 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,552 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,556 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,558 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:34:50,581 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:34:50,626 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:34:55,145 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET / HTTP/1.1" 200 -
+2025-03-27 14:34:55,163 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET / HTTP/1.1" 200 -
+2025-03-27 14:34:55,166 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,167 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:34:55,179 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,179 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,180 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,180 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,181 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,181 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,184 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,188 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:34:55,200 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:34:55,217 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:34:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:35:07,930 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:35:07,987 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:35:07,987 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:35:07,988 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:35:09,010 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:35:09,061 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:35:09,076 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:35:20,422 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:20,436 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:20,441 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,441 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,449 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,449 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,452 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,453 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,455 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,455 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,458 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,458 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:20,465 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:20] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:22,995 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:22] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:23,012 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:23,014 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,015 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,022 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,024 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,026 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,026 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,029 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,030 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,032 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,033 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:23,038 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:23] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,633 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:24,649 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,650 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,652 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "GET / HTTP/1.1" 200 -
+2025-03-27 14:35:24,669 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,670 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,671 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,671 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,675 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,675 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,677 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,678 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:35:24,682 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:35:24] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:06,148 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:39:06,215 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:39:06,215 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:39:06,216 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:39:07,455 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:39:07,503 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:39:07,519 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:39:15,569 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "GET / HTTP/1.1" 200 -
+2025-03-27 14:39:15,608 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "GET / HTTP/1.1" 200 -
+2025-03-27 14:39:15,609 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:39:15,609 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,720 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,720 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,720 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,722 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,725 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,726 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,731 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,733 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,754 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:39:15,926 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:39:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:43:03,733 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:43:03,748 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,750 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,751 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:43:03,757 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:43:03,763 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,765 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:43:03,768 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,768 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,769 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,771 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,774 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,775 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,783 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:43:03,785 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:43:03,829 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:43:03,829 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:43:03] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:46:22,706 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:46:22,769 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:46:22,769 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:46:22,770 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:46:23,807 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:46:23,856 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:46:23,872 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:47:22,370 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "GET / HTTP/1.1" 200 -
+2025-03-27 14:47:22,395 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "GET / HTTP/1.1" 200 -
+2025-03-27 14:47:22,406 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,407 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,408 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,418 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,421 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,424 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,425 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,425 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,428 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:47:22,430 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,432 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:47:22,511 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:47:22,513 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:47:22,515 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:47:22,516 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:47:22] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:49:40,244 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET / HTTP/1.1" 200 -
+2025-03-27 14:49:40,264 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:49:40,265 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:49:40,265 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:49:40,267 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET / HTTP/1.1" 200 -
+2025-03-27 14:49:40,277 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,278 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,279 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,280 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,283 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,285 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:49:40,285 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,286 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:49:40,295 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:49:40,297 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "GET /static/js/modules/imageWorker.js HTTP/1.1" 200 -
+2025-03-27 14:49:40,306 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:49:40,307 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:49:40] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:50:07,452 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET / HTTP/1.1" 200 -
+2025-03-27 14:50:07,464 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:50:07,464 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,465 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,467 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET / HTTP/1.1" 200 -
+2025-03-27 14:50:07,478 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,479 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,479 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,479 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,480 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,480 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,485 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,485 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:50:07,496 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:50:07,498 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:07,507 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:50:07,507 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:50:07,515 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:50:10,355 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:10] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,644 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "GET / HTTP/1.1" 200 -
+2025-03-27 14:50:31,669 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,672 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "GET / HTTP/1.1" 200 -
+2025-03-27 14:50:31,672 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,673 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,690 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,694 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,695 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,702 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,706 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,711 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,714 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,715 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,726 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:50:31,729 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:50:31,788 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:50:31,789 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:50:31] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:51:27,063 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:51:27,121 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:51:27,121 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:51:27,122 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:51:28,301 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:51:28,348 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:51:28,361 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:51:31,033 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET / HTTP/1.1" 200 -
+2025-03-27 14:51:31,062 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET / HTTP/1.1" 200 -
+2025-03-27 14:51:31,077 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,079 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,079 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:51:31,093 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,097 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,099 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,102 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,108 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,111 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,115 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,117 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:51:31,131 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:51:31,136 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:51:31,218 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:51:31,219 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:51:31,224 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:51:32,318 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET / HTTP/1.1" 200 -
+2025-03-27 14:51:32,338 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:51:32,339 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,341 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,342 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET / HTTP/1.1" 200 -
+2025-03-27 14:51:32,369 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,370 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,373 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,375 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,377 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,399 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,403 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,404 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:51:32,417 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 14:51:32,420 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:51:32,476 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 14:51:32,476 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 14:51:32,492 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:51:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:52:02,259 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:02,279 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:02,281 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,283 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,294 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,294 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,300 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,301 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,306 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,307 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,308 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,311 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:02,322 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:02] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:03,184 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:03,205 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:52:03,206 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,218 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:03,262 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,263 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,266 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,266 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,278 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,282 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,285 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,290 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:52:03,320 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:03,388 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:52:07,929 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:52:07,990 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 14:52:07,990 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 14:52:07,991 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 14:52:09,077 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 14:52:09,126 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 14:52:09,142 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 14:52:09,894 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:09,915 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:09,916 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,917 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,965 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,970 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,971 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,972 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,972 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,973 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,983 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,985 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:09,995 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:09] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:10,987 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:10] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:11,007 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:52:11,008 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,010 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET / HTTP/1.1" 200 -
+2025-03-27 14:52:11,056 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,057 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,058 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,058 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,059 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,060 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,066 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,067 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:52:11,079 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:52:11,177 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:52:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 14:53:43,534 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "GET / HTTP/1.1" 200 -
+2025-03-27 14:53:43,556 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,557 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "GET / HTTP/1.1" 200 -
+2025-03-27 14:53:43,557 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,567 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,569 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,570 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,570 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,571 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,577 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,578 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,579 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:43,584 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:43] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:44,289 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET / HTTP/1.1" 200 -
+2025-03-27 14:53:44,341 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,347 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET / HTTP/1.1" 200 -
+2025-03-27 14:53:44,348 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 14:53:44,364 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,365 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,366 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,366 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,368 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,370 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,374 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,376 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 14:53:44,382 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 14:53:44,404 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 14:53:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 15:01:15,430 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:01:15,491 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 15:01:15,492 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 15:01:15,493 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:01:16,520 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:01:16,568 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:01:16,582 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:01:33,884 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:01:33,904 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:01:33,914 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:01:33,914 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:01:33,917 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,937 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,939 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,939 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,940 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,942 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:01:33,943 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,944 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,947 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:01:33,952 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 15:01:33,954 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:33,992 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 15:01:33,993 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:33] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 15:01:37,220 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:01:37,239 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,240 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,240 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,244 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:01:37,251 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,252 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,253 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,254 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,254 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,256 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,260 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,261 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,267 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[33mGET /api/status HTTP/1.1[0m" 404 -
+2025-03-27 15:01:37,269 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:01:37,280 - WARNING - [app.py:113] - Invalid image data received
+2025-03-27 15:01:37,280 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:01:37] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 15:14:43,172 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:14:43,245 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 15:14:43,245 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 15:14:43,247 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:14:44,340 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:14:44,388 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:14:44,406 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:14:50,646 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:14:50,664 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:14:50,676 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:14:50,678 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:14:50,678 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:14:50,690 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:50,691 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:50,693 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:14:50,693 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:14:50,694 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:50,695 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:50,695 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:14:50,698 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:50,706 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:50] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:54,948 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:14:54,966 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:14:54,969 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /?debug=true HTTP/1.1" 200 -
+2025-03-27 15:14:54,970 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,970 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,984 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,985 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,985 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,986 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,986 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,986 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,992 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:14:54,993 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:54] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:14:55,001 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:55] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:55,024 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 15:14:59,910 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "GET / HTTP/1.1" 200 -
+2025-03-27 15:14:59,922 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,923 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,924 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,937 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "GET / HTTP/1.1" 200 -
+2025-03-27 15:14:59,943 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,944 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,944 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,950 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,951 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,953 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,958 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:14:59,958 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:14:59] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:00,202 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:00] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,121 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:03,137 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,137 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,138 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,142 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:03,150 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,151 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,152 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,153 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,156 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,157 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,159 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,160 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:03,167 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:03] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,670 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:05,683 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,686 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,687 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,692 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:05,699 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,700 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,700 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,702 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,704 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,705 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,706 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,708 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:05,717 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:05] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,595 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:08,614 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:08,617 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,618 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,620 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,638 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,639 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,639 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,642 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,643 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,647 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,647 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,648 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,654 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,828 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:08,844 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:08,846 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,849 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,849 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,858 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,858 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,859 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,859 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,861 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,863 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,865 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,866 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:08,872 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:08] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,013 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,031 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,031 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,034 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,035 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,043 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,043 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,044 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,045 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,046 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,048 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,050 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,052 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,057 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,197 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,242 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,244 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,245 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,246 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,255 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,255 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,256 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,256 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,257 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,257 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,262 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,262 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,268 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,336 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,351 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,351 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,352 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,353 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,363 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,364 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,364 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,364 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,365 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,368 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,370 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,370 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,382 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,847 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,866 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-27 15:15:09,867 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:15:09,867 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,869 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,880 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,881 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,881 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,881 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,883 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,883 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,887 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,889 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:15:09,901 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:15:09,922 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:15:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 15:18:27,050 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:18:27,316 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:18:28,730 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:18:28,778 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:18:28,793 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:18:44,029 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:18:44,282 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:18:45,600 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:18:45,649 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:18:45,665 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:18:52,872 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:18:53,119 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:18:54,332 - INFO - [app.py:33] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:18:54,384 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:18:54,399 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:19:05,118 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:19:05] "[33mGET /status HTTP/1.1[0m" 404 -
+2025-03-27 15:19:14,709 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:19:14,947 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:19:16,163 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:19:16,213 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:19:16,230 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:19:23,358 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:19:23,607 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:19:24,815 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:19:24,865 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:19:24,879 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:19:26,272 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:19:26] "GET /status HTTP/1.1" 200 -
+2025-03-27 15:19:36,280 - WARNING - [app.py:134] - Invalid image data received
+2025-03-27 15:19:36,281 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:19:36] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 15:19:51,313 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:19:51,558 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:19:52,750 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:19:52,800 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:19:52,818 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:20:01,978 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:20:02,233 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:20:03,464 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:20:03,513 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:20:03,530 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:20:25,895 - WARNING - [app.py:101] - Empty image data received
+2025-03-27 15:20:25,895 - WARNING - [app.py:148] - Invalid image data received
+2025-03-27 15:20:25,895 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:25] "[31m[1mPOST /process_image HTTP/1.1[0m" 400 -
+2025-03-27 15:20:58,588 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:20:58,673 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.16.9.151:5001
+2025-03-27 15:20:58,674 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-03-27 15:20:58,675 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:20:59,839 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:20:59,887 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:20:59,901 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:20:59,925 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET / HTTP/1.1" 200 -
+2025-03-27 15:20:59,941 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET / HTTP/1.1" 200 -
+2025-03-27 15:20:59,947 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,952 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:20:59,953 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:20:59,966 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:20:59,967 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,967 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,970 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,973 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,974 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,975 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:20:59,976 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:20:59,981 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:20:59] "GET /static/js/modules/imageWorker.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,317 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET / HTTP/1.1" 200 -
+2025-03-27 15:21:01,329 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,331 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:21:01,331 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,333 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET / HTTP/1.1" 200 -
+2025-03-27 15:21:01,348 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,348 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,348 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,349 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,350 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,350 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,355 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,355 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:21:01,364 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:21:01,382 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 15:21:04,233 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:21:04] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:21:59,831 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:22:00,099 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:22:01,340 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:22:01,391 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:22:01,408 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:23:09,510 - INFO - [_internal.py:97] -  * Detected change in '/Users/son-wooyoung/Documents/project/fomal-photo/backend/src/app.py', reloading
+2025-03-27 15:23:09,770 - INFO - [_internal.py:97] -  * Restarting with stat
+2025-03-27 15:23:11,043 - INFO - [app.py:34] - ===== 포말 포토 백엔드 서버 시작 =====
+2025-03-27 15:23:11,099 - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-03-27 15:23:11,116 - INFO - [_internal.py:97] -  * Debugger PIN: 467-071-636
+2025-03-27 15:27:18,547 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:27:18] "GET /status HTTP/1.1" 200 -
+2025-03-27 15:31:24,759 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:24] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:24,785 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:24] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:24,809 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:24] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:24,814 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:24] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:31:24,816 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:24] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:31:25,154 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:31:25,157 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,157 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,159 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,161 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,162 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,163 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,163 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,186 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:25,254 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-27 15:31:25,879 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:25,901 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:31:25,902 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:25,903 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:31:25,904 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:25] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:31:26,069 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,070 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,071 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,071 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,071 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,071 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,079 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,080 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:31:26,113 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:26,188 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:26] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-27 15:31:31,043 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:31,063 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:31,064 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:31:31,065 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,066 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,355 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,355 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,356 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,356 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,357 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,357 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,362 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,363 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:31:31,380 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:31,429 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-27 15:31:33,074 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:33,095 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,096 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,097 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,098 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:33,108 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,109 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,109 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,109 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,110 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,110 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,114 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,115 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,122 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:33,140 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:33] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:31:43,788 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:43] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:43,810 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:43] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:31:43,811 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:43] "GET /static/js/test-backend.js HTTP/1.1" 200 -
+2025-03-27 15:31:43,812 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:43] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:31:43,814 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:43] "GET / HTTP/1.1" 200 -
+2025-03-27 15:31:44,015 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/ui.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,015 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,015 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/imageProcessor.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,016 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/downloadHandler.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,016 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/utils.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,016 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/cropTool.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,023 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/workerManager.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,024 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/js/modules/debug.js HTTP/1.1" 200 -
+2025-03-27 15:31:44,030 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:31:44,056 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:31:44] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-27 15:32:24,399 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "GET / HTTP/1.1" 200 -
+2025-03-27 15:32:24,433 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "GET / HTTP/1.1" 200 -
+2025-03-27 15:32:24,437 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,440 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,441 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,578 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,579 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,580 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,581 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,584 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,585 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,587 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,587 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,593 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:24,680 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:24] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,413 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "GET / HTTP/1.1" 200 -
+2025-03-27 15:32:27,424 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,426 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,426 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,429 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "GET / HTTP/1.1" 200 -
+2025-03-27 15:32:27,434 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,435 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,438 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,440 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,440 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,443 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,444 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,444 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,450 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:32:27,465 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:32:27] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:36:43,914 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:36:43] "GET /status HTTP/1.1" 200 -
+2025-03-27 15:44:46,811 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:44:46] "GET /status HTTP/1.1" 200 -
+2025-03-27 15:45:23,399 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "GET / HTTP/1.1" 200 -
+2025-03-27 15:45:23,419 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "GET / HTTP/1.1" 200 -
+2025-03-27 15:45:23,419 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "GET /static/css/modern-style.css HTTP/1.1" 200 -
+2025-03-27 15:45:23,421 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,421 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-03-27 15:45:23,434 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "GET /static/js/modules/camera.js HTTP/1.1" 200 -
+2025-03-27 15:45:23,435 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,435 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,436 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,436 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,437 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,441 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,442 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,464 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:45:23,485 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:23] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:45:29,837 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:45:29] "[35m[1mGET /static/audio/shutter.mp3 HTTP/1.1[0m" 206 -
+2025-03-27 15:55:08,177 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:08] "GET /status HTTP/1.1" 200 -
+2025-03-27 15:55:39,227 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "GET / HTTP/1.1" 200 -
+2025-03-27 15:55:39,242 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,244 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,245 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,248 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "GET / HTTP/1.1" 200 -
+2025-03-27 15:55:39,260 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,261 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,264 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,264 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,265 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,267 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,268 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,270 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,283 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:55:39,306 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:55:39] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,144 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "GET / HTTP/1.1" 200 -
+2025-03-27 15:56:01,158 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,159 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,160 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/test-backend.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,166 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "GET / HTTP/1.1" 200 -
+2025-03-27 15:56:01,175 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/imageProcessor.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,175 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/camera.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,178 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/cropTool.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,179 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/ui.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,181 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/downloadHandler.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,184 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/workerManager.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,186 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/utils.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,188 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/debug.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,199 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/js/modules/imageWorker.js HTTP/1.1[0m" 304 -
+2025-03-27 15:56:01,223 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:01] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2025-03-27 15:56:04,807 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:04] "[35m[1mGET /static/audio/shutter.mp3 HTTP/1.1[0m" 206 -
+2025-03-27 15:56:14,830 - INFO - [_internal.py:97] - 127.0.0.1 - - [27/Mar/2025 15:56:14] "[36mGET /static/css/modern-style.css HTTP/1.1[0m" 304 -

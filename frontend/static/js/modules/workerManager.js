@@ -25,6 +25,12 @@ export class WorkerManager {
     // 디버그 모드
     this.debugMode = false;
     
+    this.status = {
+      current: '대기 중',
+      type: 'info' // 'info', 'error', 'success'
+    };
+    this.progress = 0; // 0-100
+    
     if (this.isWorkerSupported) {
       this._initWorker();
     } else {
@@ -159,12 +165,51 @@ export class WorkerManager {
   }
   
   /**
+   * 상태 메시지 업데이트
+   * @param {string} message - 상태 메시지
+   * @param {string} type - 메시지 타입 (info, error, success)
+   */
+  updateStatus(message, type = 'info') {
+    this.status.current = message;
+    this.status.type = type;
+    
+    // 상태 변경 이벤트 발생
+    const event = new CustomEvent('workerStatusUpdate', {
+      detail: { message, type }
+    });
+    document.dispatchEvent(event);
+    
+    // 로깅
+    console.log(`[워커 상태] ${message}`);
+  }
+  
+  /**
+   * 진행률 업데이트
+   * @param {number} percent - 진행률 (0-100)
+   */
+  updateProgress(percent) {
+    this.progress = Math.max(0, Math.min(100, percent));
+    
+    // 진행률 변경 이벤트 발생
+    const event = new CustomEvent('workerProgressUpdate', {
+      detail: { percent: this.progress }
+    });
+    document.dispatchEvent(event);
+    
+    // 로딩 인디케이터 업데이트
+    const progressBar = document.querySelector('.loading-progress .progress-bar');
+    if (progressBar) {
+      progressBar.style.width = `${this.progress}%`;
+    }
+  }
+  
+  /**
    * 디버그 모드 설정
    * @param {boolean} enabled - 활성화 여부
    */
   setDebugMode(enabled) {
     this.debugMode = enabled;
-    console.log(`Worker 디버그 모드가 ${enabled ? '활성화' : '비활성화'}되었습니다.`);
+    console.log(`워커 디버그 모드: ${enabled ? '활성화' : '비활성화'}`);
   }
   
   /**
@@ -254,101 +299,111 @@ export class WorkerManager {
   }
   
   /**
-   * 이미지 처리 (압축 및 서버 처리)
-   * @param {string} imageData - 처리할 이미지 데이터 URL
+   * 이미지 처리 요청
+   * @param {string} imageData - 이미지 데이터 (base64)
    * @param {Object} options - 처리 옵션
-   * @returns {Promise<Object>} 처리 결과
+   * @returns {Promise<string>} 처리된 이미지 데이터
    */
-  processImage(imageData, options = {}) {
-    const startTime = performance.now();
+  async processImage(imageData, options = {}) {
+    this.updateStatus('요청 준비 중...');
     
-    return new Promise((resolve, reject) => {
-      // Worker 미지원 시 대체 처리
-      if (!this.isWorkerSupported || !this.worker) {
-        console.warn('Worker를 사용할 수 없습니다. 기본 처리를 사용합니다.');
-        
-        // 폼 데이터 생성
-        const formData = new FormData();
-        formData.append('image', imageData);
-        
-        // 옵션 추가
-        for (const [key, value] of Object.entries(options.processingOptions || {})) {
-          formData.append(key, typeof value === 'boolean' ? value.toString() : value);
-        }
-        
-        // 서버 요청
-        fetch(options.url || '/process_image', {
-          method: 'POST',
-          body: formData,
-          credentials: 'same-origin',
-          headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-          }
-        })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`서버 오류: ${response.status}`);
-          }
-          return response.json();
-        })
-        .then(result => {
-          const endTime = performance.now();
-          const processingTime = endTime - startTime;
-          
-          this.stats.totalProcessed++;
-          this.stats.processingTimes.push(processingTime);
-          
-          if (this.debugMode) {
-            console.log(`이미지 처리 완료 (Worker 미사용): ${processingTime.toFixed(2)}ms`);
-          }
-          
-          resolve(result);
-        })
-        .catch(error => {
-          this.stats.errors++;
-          reject(error);
-        });
-        
-        return;
+    try {
+      // 이미지 데이터 검증
+      if (!imageData) {
+        throw new Error('이미지 데이터가 비어 있습니다.');
       }
       
-      // 요청 ID 생성
-      const requestId = this._generateRequestId();
+      // 로딩 표시 업데이트
+      this.updateStatus('요청 전송 중...');
       
-      // 콜백 등록
-      this._registerCallback(requestId, (error, result) => {
-        if (error) {
-          this.stats.errors++;
-          reject(error);
-        } else {
-          const endTime = performance.now();
-          const processingTime = endTime - startTime;
-          
-          this.stats.totalProcessed++;
-          this.stats.processingTimes.push(processingTime);
-          
-          if (this.debugMode) {
-            console.log(`이미지 처리 완료 (Worker 사용): ${processingTime.toFixed(2)}ms`);
-            console.log('처리 옵션:', options.processingOptions);
-            console.log('결과 메타데이터:', result.metadata);
+      // FormData 객체 생성
+      const formData = new FormData();
+      formData.append('image', imageData);
+      
+      // 각 옵션을 개별적으로 추가 (JSON.stringify 사용하지 않음)
+      formData.append('adjust_face_position', options.adjustFacePosition !== false ? 'true' : 'false');
+      formData.append('remove_background', options.removeBackground !== false ? 'true' : 'false');
+      formData.append('upscale', options.upscale !== false ? 'true' : 'false');
+      formData.append('skin_smoothing', options.skinSmoothing !== false ? 'true' : 'false');
+      formData.append('eye_enhance', options.eyeEnhance !== false ? 'true' : 'false');
+      formData.append('sharpness_enhance', options.sharpnessEnhance !== false ? 'true' : 'false');
+      
+      // 진행률 표시 업데이트
+      this.updateProgress(10);
+      
+      // 요청 전송
+      const response = await fetch('/process_image', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        }
+      });
+      
+      // 실패한 응답 처리
+      if (!response.ok) {
+        let errorMessage = `서버 오류 (${response.status})`;
+        
+        try {
+          const errorData = await response.json();
+          errorMessage = errorData.error || errorData.message || errorMessage;
+        } catch (e) {
+          // JSON 파싱 실패 시 텍스트로 시도
+          try {
+            errorMessage = await response.text();
+          } catch (textError) {
+            // 텍스트 읽기도 실패하면 기본 오류 메시지 사용
           }
-          
-          resolve(result);
         }
-      });
+        
+        throw new Error(errorMessage);
+      }
       
-      // Worker에 메시지 전송
-      this.worker.postMessage({
-        type: 'process',
-        data: {
-          imageData,
-          url: options.url || '/process_image',
-          compressionOptions: options.compressionOptions || { quality: 0.9 },
-          processingOptions: options.processingOptions || {},
-          requestId
+      // 진행률 표시 업데이트
+      this.updateProgress(70);
+      this.updateStatus('응답 처리 중...');
+      
+      // 응답 처리
+      const result = await response.json();
+      
+      if (!result.enhanced_image) {
+        throw new Error('서버에서 처리된 이미지를 반환하지 않았습니다.');
+      }
+      
+      // 진행률 표시 업데이트
+      this.updateProgress(90);
+      this.updateStatus('이미지 처리 완료');
+      
+      // 메타데이터 로깅
+      if (result.metadata) {
+        console.log('이미지 처리 메타데이터:', result.metadata);
+        
+        // 처리 시간 로깅
+        if (result.metadata.processing_time) {
+          console.log(`서버 처리 시간: ${result.metadata.processing_time.toFixed(2)}초`);
         }
-      });
-    });
+      }
+      
+      // 완료 표시
+      this.updateProgress(100);
+      setTimeout(() => this.updateStatus('대기 중'), 1000);
+      
+      return result.enhanced_image;
+    } catch (error) {
+      console.error('이미지 처리 요청 오류:', error);
+      
+      // 오류 메시지 표시
+      this.updateStatus('오류 발생', 'error');
+      this.updateProgress(0);
+      
+      if (error.name === 'AbortError' || error.message.includes('timeout')) {
+        throw new Error('이미지 처리 요청 시간이 초과되었습니다. 인터넷 연결을 확인하고 다시 시도해주세요.');
+      } else if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+        throw new Error('서버 연결에 실패했습니다. 인터넷 연결을 확인하고 다시 시도해주세요.');
+      } else {
+        throw error;
+      }
+    }
   }
 }
 

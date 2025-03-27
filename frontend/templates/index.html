@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="증명사진 촬영 | 운전면허 여권 취업 사진 자동 보정">
     <meta name="twitter:description" content="증명사진 자동 보정 서비스. 운전면허, 여권, 취업 사진을 표준 규격에 맞게 자동으로 보정하고 배경을 제거해 드립니다.">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/modern-style.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,14 +35,102 @@
       }
     }
     </script>
+    <style>
+    /* 디버그 패널 스타일 */
+    .debug-panel {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      z-index: 9999;
+      border-top-left-radius: 8px;
+      overflow: hidden;
+      display: none;
+    }
+
+    .debug-mode .debug-panel {
+      display: block;
+    }
+
+    .debug-header {
+      background-color: #333;
+      padding: 5px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .debug-content {
+      padding: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .debug-camera-state {
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .debug-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .debug-btn {
+      background-color: #333;
+      border: 1px solid #666;
+      color: #00ff00;
+      padding: 5px;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      border-radius: 4px;
+    }
+
+    .debug-btn:hover {
+      background-color: #444;
+    }
+
+    /* 디버그 정보에 스크롤 추가 */
+    .camera-debug-info {
+      overflow-y: auto;
+      max-height: 100px;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.8) !important;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      line-height: 1.3;
+    }
+    </style>
 </head>
 <body>
+    <!-- 로딩 인디케이터 추가 -->
+    <div class="loading-indicator hidden">
+      <div class="loading-spinner"></div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="loading-status">처리 중...</div>
+    </div>
+    
+    <!-- 워커 상태 메시지 -->
+    <div class="worker-status">작업 진행 중...</div>
+    
     <div class="app-container">
         <header class="app-header">
             <div class="header-content">
                 <div class="logo-container">
                     <span class="logo-text"><span class="logo-bold">Fomal</span>pix</span>
                 </div>
+                <button id="theme-toggle" class="theme-toggle tooltip" data-tooltip="테마 변경">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </header>
 
@@ -53,10 +142,27 @@
                     <div class="camera-container">
                         <div class="camera-status">
                             <span class="status-badge"><i class="fas fa-video"></i> 카메라 준비중...</span>
+                            <span class="camera-debug-info" style="display: none; font-size: 12px; color: #666; margin-top: 5px;"></span>
                         </div>
                         <video id="camera-preview" autoplay playsinline></video>
                         <div class="guide-line"></div>
                         <div class="face-indicators"></div>
+                        <div class="camera-alternative" style="display:none;">
+                            <div class="camera-error-message">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h3>카메라 접근 오류</h3>
+                                <p>카메라에 접근할 수 없습니다. 브라우저 설정에서 카메라 접근을 허용하거나 다른 브라우저에서 시도해보세요.</p>
+                                <button id="retry-camera" class="retry-button">
+                                    <i class="fas fa-redo"></i> 다시 시도
+                                </button>
+                                <div style="margin-top: 15px; text-align: center;">
+                                    <label for="manual-upload" class="upload-button">
+                                        <i class="fas fa-upload"></i> 사진 업로드하기
+                                    </label>
+                                    <input type="file" id="manual-upload" accept="image/*" style="display:none;">
+                                </div>
+                            </div>
+                        </div>
                         <button class="filter-toggle tooltip" data-tooltip="사진 필터 변경">
                             <i class="fas fa-sliders-h"></i>
                         </button>
@@ -66,13 +172,13 @@
                         <button id="capture-button" class="tooltip" data-tooltip="증명사진 찍기">
                             <i class="fas fa-camera"></i> 사진 촬영
                         </button>
-                        <button id="reset-button" class="tooltip" data-tooltip="처음부터 다시 시작">
+                        <button id="reset-button" class="tooltip feature-button" data-tooltip="처음부터 다시 시작">
                             <i class="fas fa-redo"></i> 다시 찍기
                         </button>
-                        <button id="toggle-guidelines-button" class="tooltip" data-tooltip="얼굴 위치 가이드라인 표시/숨김">
+                        <button id="toggle-guidelines-button" class="tooltip feature-button" data-tooltip="얼굴 위치 가이드라인 표시/숨김">
                             <i class="fas fa-ruler-combined"></i> 가이드라인
                         </button>
-                        <button id="switch-camera" class="tooltip" data-tooltip="전/후면 카메라 전환">
+                        <button id="switch-camera" class="tooltip feature-button" data-tooltip="전/후면 카메라 전환">
                             <i class="fas fa-sync"></i> 카메라 전환
                         </button>
                     </div>
@@ -209,15 +315,6 @@
         </button>
     </div>
 
-    <!-- 로딩 인디케이터 -->
-    <div id="loading-overlay" style="display:none;">
-        <div class="loading-spinner"></div>
-        <p>사진 보정 중...</p>
-        <div class="loading-progress">
-            <div class="progress-bar"></div>
-        </div>
-    </div>
-    
     <!-- 토스트 메시지 컨테이너 -->
     <div class="toast-message" id="toast-message"></div>
 
@@ -250,11 +347,113 @@
                 <li><kbd>G</kbd> - 가이드라인 토글</li>
                 <li><kbd>S</kbd> - 카메라 전환</li>
                 <li><kbd>Esc</kbd> - 팝업 닫기</li>
+                <li><kbd>D</kbd> - 다크모드 토글</li>
             </ul>
             <button class="close-shortcuts"><i class="fas fa-times"></i></button>
         </div>
     </div>
 
-    <script type="module" src="/static/js/script.js"></script>
+    <!-- 디버그 도움말 정보 -->
+    <div class="debug-help" style="display: none">
+      <p>디버그 모드 단축키:</p>
+      <ul>
+        <li>Shift+Alt+D: 디버그 로그 다운로드</li>
+      </ul>
+      <p>URL에 ?debug=true를 추가하여 디버그 모드를 활성화할 수 있습니다.</p>
+    </div>
+
+    <!-- 테마 전환 스크립트 -->
+    <script>
+    (function() {
+        // 테마 관련 함수
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // 저장된 테마 불러오기
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        } else {
+            // 시스템 테마 감지
+            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDarkMode) {
+                htmlElement.setAttribute('data-theme', 'dark');
+                updateThemeIcon('dark');
+            }
+        }
+        
+        // 테마 아이콘 업데이트
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+        
+        // 테마 전환
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+            
+            // 토스트 메시지 표시
+            const themeText = newTheme === 'dark' ? '다크' : '라이트';
+            showToast(`${themeText} 모드로 전환되었습니다.`, 'info');
+        });
+        
+        // 키보드 단축키 처리
+        document.addEventListener('keydown', function(event) {
+            // D 키를 누르면 테마 전환
+            if (event.key.toLowerCase() === 'd' && !event.ctrlKey && !event.metaKey) {
+                themeToggle.click();
+            }
+        });
+        
+        // 토스트 메시지 표시 함수
+        function showToast(message, type = 'info') {
+            const toast = document.getElementById('toast-message');
+            
+            // 기존 클래스 제거
+            toast.className = 'toast-message';
+            
+            // 메시지 유형에 따른 아이콘
+            let icon = '';
+            if (type === 'success') {
+                icon = '<i class="fas fa-check-circle"></i>';
+                toast.classList.add('success');
+            } else if (type === 'error') {
+                icon = '<i class="fas fa-exclamation-circle"></i>';
+                toast.classList.add('error');
+            } else if (type === 'warning') {
+                icon = '<i class="fas fa-exclamation-triangle"></i>';
+                toast.classList.add('warning');
+            } else {
+                icon = '<i class="fas fa-info-circle"></i>';
+                toast.classList.add('info');
+            }
+            
+            // 메시지 표시
+            toast.innerHTML = icon + message;
+            toast.classList.add('show');
+            
+            // 3초 후 사라짐
+            setTimeout(function() {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    })();
+    </script>
+
+    <!-- 메인 자바스크립트 -->
+    <script type="module" src="/static/js/main.js"></script>
+    
+    <!-- 백엔드 연결 테스트용 스크립트 -->
+    <script src="/static/js/test-backend.js"></script>
 </body>
 </html> 
